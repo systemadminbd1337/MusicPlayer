@@ -1,0 +1,50 @@
+2025-10-26 19:27:29 - 📊 Current logs in table: 1
+2025-10-26 19:27:36 - 🔄 Login attempt started for: 'dfvdfv'
+2025-10-26 19:27:36 - 🔍 Checking k_admins table
+2025-10-26 19:27:36 - 🔍 Checking k_users table
+2025-10-26 19:27:36 - ❌ No valid user found, logging failed attempt for: 'dfvdfv'
+2025-10-26 19:27:36 - ❌ Login Log Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'k_admin_login_logs.PRIMARY' - User: dfvdfv, IP: 103.173.175.42, Success: 0
+2025-10-26 19:27:36 - 🔍 Failed login log result: FAILED
+2025-10-26 19:27:36 - 🔚 Login process completed
+
+2025-10-26 19:27:36 - 📊 Current logs in table: 1
+2025-10-26 19:27:43 - 🔄 Login attempt started for: 'xcdvfxdcv'
+2025-10-26 19:27:43 - 🔍 Checking k_admins table
+2025-10-26 19:27:43 - 🔍 Checking k_users table
+2025-10-26 19:27:43 - ❌ No valid user found, logging failed attempt for: 'xcdvfxdcv'
+2025-10-26 19:27:43 - ❌ Login Log Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'k_admin_login_logs.PRIMARY' - User: xcdvfxdcv, IP: 103.173.175.42, Success: 0
+2025-10-26 19:27:43 - 🔍 Failed login log result: FAILED
+2025-10-26 19:27:43 - 🔚 Login process completed
+
+2025-10-26 19:27:43 - 📊 Current logs in table: 1
+2025-10-26 19:27:51 - 🔄 Login attempt started for: 'bseo'
+2025-10-26 19:27:51 - 🔍 Checking k_admins table
+2025-10-26 19:27:51 - 👤 Admin found: bseo
+2025-10-26 19:27:51 - ✅ Password verified for admin
+2025-10-26 19:27:51 - ❌ Login Log Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'k_admin_login_logs.PRIMARY' - User: bseo, IP: 103.173.175.42, Success: 1
+2025-10-26 19:27:51 - 🚀 Login successful, redirecting
+2025-10-26 19:30:59 - 📊 Current logs in table: 1
+2025-10-26 19:31:05 - 🔄 Login attempt started for: 'dfvdfdf'
+2025-10-26 19:31:05 - 🔍 Checking k_admins table
+2025-10-26 19:31:05 - 🔍 Checking k_users table
+2025-10-26 19:31:05 - ❌ No valid user found, logging failed attempt for: 'dfvdfdf'
+2025-10-26 19:31:05 - ❌ Login Log Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'k_admin_login_logs.PRIMARY' - User: dfvdfdf, IP: 103.173.175.42, Success: 0
+2025-10-26 19:31:05 - 🔍 Failed login log result: FAILED
+2025-10-26 19:31:05 - 🔚 Login process completed
+
+2025-10-26 19:31:05 - 📊 Current logs in table: 1
+2025-10-26 19:31:10 - 🔄 Login attempt started for: 'dfdfdseret'
+2025-10-26 19:31:10 - 🔍 Checking k_admins table
+2025-10-26 19:31:10 - 🔍 Checking k_users table
+2025-10-26 19:31:10 - ❌ No valid user found, logging failed attempt for: 'dfdfdseret'
+2025-10-26 19:31:10 - ❌ Login Log Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'k_admin_login_logs.PRIMARY' - User: dfdfdseret, IP: 103.173.175.42, Success: 0
+2025-10-26 19:31:10 - 🔍 Failed login log result: FAILED
+2025-10-26 19:31:10 - 🔚 Login process completed
+
+2025-10-26 19:31:10 - 📊 Current logs in table: 1
+2025-10-26 19:31:18 - 🔄 Login attempt started for: 'bseo'
+2025-10-26 19:31:18 - 🔍 Checking k_admins table
+2025-10-26 19:31:18 - 👤 Admin found: bseo
+2025-10-26 19:31:18 - ✅ Password verified for admin
+2025-10-26 19:31:18 - ❌ Login Log Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'k_admin_login_logs.PRIMARY' - User: bseo, IP: 103.173.175.42, Success: 1
+2025-10-26 19:31:18 - 🚀 Login successful, redirecting

@@ -1,0 +1,160 @@
+[2025-10-28 18:51:25] TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 18:51:25] DATA FETCH: Starting to fetch placement logs
+[2025-10-28 18:51:25] ORDERS DATA: Found 500 records from k_orders
+[2025-10-28 18:51:25] PLACEMENTS DATA: Found 7 records from k_link_placements
+[2025-10-28 18:51:25] TOTAL LOGS: Combined total 500 logs
+[2025-10-28 18:51:35] DELETE ACTION: Admin attempted to delete all placement logs
+[2025-10-28 18:51:35] DELETE SUCCESS: Deleted 0 records from k_link_placements
+[2025-10-28 18:51:36] TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 18:51:36] DATA FETCH: Starting to fetch placement logs
+[2025-10-28 18:51:36] ORDERS DATA: Found 500 records from k_orders
+[2025-10-28 18:51:36] PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 18:51:36] TOTAL LOGS: Combined total 500 logs
+[2025-10-28 18:51:46] DELETE ACTION: Admin attempted to delete all placement logs
+[2025-10-28 18:51:46] DELETE SUCCESS: Deleted 0 records from k_link_placements
+[2025-10-28 18:51:47] TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 18:51:47] DATA FETCH: Starting to fetch placement logs
+[2025-10-28 18:51:47] ORDERS DATA: Found 500 records from k_orders
+[2025-10-28 18:51:47] PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 18:51:47] TOTAL LOGS: Combined total 500 logs
+[2025-10-28 18:51:58] DELETE ACTION: Admin attempted to delete all placement logs
+[2025-10-28 18:51:58] DELETE SUCCESS: Deleted 0 records from k_link_placements
+[2025-10-28 18:51:59] TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 18:51:59] DATA FETCH: Starting to fetch placement logs
+[2025-10-28 18:51:59] ORDERS DATA: Found 500 records from k_orders
+[2025-10-28 18:51:59] PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 18:51:59] TOTAL LOGS: Combined total 500 logs
+[2025-10-28 18:56:04] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 18:56:04] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 18:56:04] 📦 ORDERS DATA: Found 500 records from k_orders
+[2025-10-28 18:56:04] 🎯 PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 18:56:04] 📈 TOTAL LOGS: Combined total 500 logs
+[2025-10-28 18:56:36] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 18:56:36] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 18:56:36] 📦 ORDERS DATA: Found 500 records from k_orders
+[2025-10-28 18:56:36] 🎯 PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 18:56:36] 📈 TOTAL LOGS: Combined total 500 logs
+[2025-10-28 18:56:36] 🧪 TEST PLACEMENT: Manual test triggered
+[2025-10-28 18:56:36] ✅ TEST SUCCESS: Test placement data inserted
+[2025-10-28 18:56:37] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 18:56:37] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 18:56:37] 📦 ORDERS DATA: Found 500 records from k_orders
+[2025-10-28 18:56:37] 🎯 PLACEMENTS DATA: Found 1 records from k_link_placements
+[2025-10-28 18:56:37] 📈 TOTAL LOGS: Combined total 500 logs
+[2025-10-28 18:56:57] 🗑️ DELETE ACTION: Admin attempted to delete all placement logs
+[2025-10-28 18:56:57] ✅ DELETE SUCCESS: Deleted 1 records from k_link_placements and 38972 records from k_orders
+[2025-10-28 18:56:58] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 18:56:58] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 18:56:58] 📦 ORDERS DATA: Found 0 records from k_orders
+[2025-10-28 18:56:58] 🎯 PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 18:56:58] 📈 TOTAL LOGS: Combined total 0 logs
+[2025-10-28 18:57:02] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 18:57:02] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 18:57:02] 📦 ORDERS DATA: Found 0 records from k_orders
+[2025-10-28 18:57:02] 🎯 PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 18:57:02] 📈 TOTAL LOGS: Combined total 0 logs
+[2025-10-28 19:02:45] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 19:02:45] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 19:02:45] 📦 ORDERS DATA: Found 0 records from k_orders
+[2025-10-28 19:02:45] 🎯 PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 19:02:45] 📈 TOTAL LOGS: Combined total 0 logs
+[2025-10-28 19:02:59] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 19:02:59] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 19:02:59] 📦 ORDERS DATA: Found 0 records from k_orders
+[2025-10-28 19:02:59] 🎯 PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 19:02:59] 📈 TOTAL LOGS: Combined total 0 logs
+[2025-10-28 19:02:59] 🧪 TEST PLACEMENT: Manual test triggered
+[2025-10-28 19:02:59] ✅ TEST SUCCESS: Test placement data inserted
+[2025-10-28 19:02:59] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 19:02:59] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 19:02:59] 📦 ORDERS DATA: Found 0 records from k_orders
+[2025-10-28 19:02:59] 🎯 PLACEMENTS DATA: Found 1 records from k_link_placements
+[2025-10-28 19:02:59] 📈 TOTAL LOGS: Combined total 1 logs
+[2025-10-28 19:04:41] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 19:04:41] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 19:04:41] 📦 ORDERS DATA: Found 4 records from k_orders
+[2025-10-28 19:04:41] 🎯 PLACEMENTS DATA: Found 5 records from k_link_placements
+[2025-10-28 19:04:41] 📈 TOTAL LOGS: Combined total 9 logs
+[2025-10-28 19:16:25] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 19:16:25] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 19:16:25] 📦 ORDERS DATA: Found 7 records from k_orders
+[2025-10-28 19:16:25] 🎯 PLACEMENTS DATA: Found 8 records from k_link_placements
+[2025-10-28 19:16:25] 📈 TOTAL LOGS: Combined total 15 logs
+[2025-10-28 22:47:37] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 22:47:37] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 22:47:37] 📦 ORDERS DATA: Found 12 records from k_orders
+[2025-10-28 22:47:37] 🎯 PLACEMENTS DATA: Found 13 records from k_link_placements
+[2025-10-28 22:47:37] 📈 TOTAL LOGS: Combined total 25 logs
+[2025-10-28 22:48:08] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 22:48:08] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 22:48:08] 📦 ORDERS DATA: Found 12 records from k_orders
+[2025-10-28 22:48:08] 🎯 PLACEMENTS DATA: Found 13 records from k_link_placements
+[2025-10-28 22:48:08] 📈 TOTAL LOGS: Combined total 25 logs
+[2025-10-28 22:48:12] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 22:48:12] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 22:48:12] 📦 ORDERS DATA: Found 12 records from k_orders
+[2025-10-28 22:48:12] 🎯 PLACEMENTS DATA: Found 13 records from k_link_placements
+[2025-10-28 22:48:12] 📈 TOTAL LOGS: Combined total 25 logs
+[2025-10-28 22:48:36] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 22:48:36] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 22:48:36] 📦 ORDERS DATA: Found 12 records from k_orders
+[2025-10-28 22:48:36] 🎯 PLACEMENTS DATA: Found 13 records from k_link_placements
+[2025-10-28 22:48:36] 📈 TOTAL LOGS: Combined total 25 logs
+[2025-10-28 22:48:36] 🧪 TEST PLACEMENT: Manual test triggered
+[2025-10-28 22:48:36] ✅ TEST SUCCESS: Test placement data inserted
+[2025-10-28 22:48:36] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 22:48:36] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 22:48:36] 📦 ORDERS DATA: Found 12 records from k_orders
+[2025-10-28 22:48:36] 🎯 PLACEMENTS DATA: Found 14 records from k_link_placements
+[2025-10-28 22:48:36] 📈 TOTAL LOGS: Combined total 26 logs
+[2025-10-28 23:04:13] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 23:04:13] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 23:04:13] 📦 ORDERS DATA: Found 13 records from k_orders
+[2025-10-28 23:04:13] 🎯 PLACEMENTS DATA: Found 15 records from k_link_placements
+[2025-10-28 23:04:13] 📈 TOTAL LOGS: Combined total 28 logs
+[2025-10-28 23:04:16] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 23:04:16] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 23:04:16] 📦 ORDERS DATA: Found 13 records from k_orders
+[2025-10-28 23:04:16] 🎯 PLACEMENTS DATA: Found 15 records from k_link_placements
+[2025-10-28 23:04:16] 📈 TOTAL LOGS: Combined total 28 logs
+[2025-10-28 23:04:29] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 23:04:29] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 23:04:29] 📦 ORDERS DATA: Found 13 records from k_orders
+[2025-10-28 23:04:29] 🎯 PLACEMENTS DATA: Found 15 records from k_link_placements
+[2025-10-28 23:04:29] 📈 TOTAL LOGS: Combined total 28 logs
+[2025-10-28 23:04:29] 🧪 TEST PLACEMENT: Manual test triggered
+[2025-10-28 23:04:29] ✅ TEST SUCCESS: Test placement data inserted
+[2025-10-28 23:04:29] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 23:04:29] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 23:04:29] 📦 ORDERS DATA: Found 13 records from k_orders
+[2025-10-28 23:04:29] 🎯 PLACEMENTS DATA: Found 16 records from k_link_placements
+[2025-10-28 23:04:29] 📈 TOTAL LOGS: Combined total 29 logs
+[2025-10-28 23:36:15] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 23:36:15] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 23:36:15] 📦 ORDERS DATA: Found 14 records from k_orders
+[2025-10-28 23:36:15] 🎯 PLACEMENTS DATA: Found 17 records from k_link_placements
+[2025-10-28 23:36:15] 📈 TOTAL LOGS: Combined total 31 logs
+[2025-10-28 23:36:29] 🗑️ DELETE ACTION: Admin attempted to delete all placement logs
+[2025-10-28 23:36:29] ✅ DELETE SUCCESS: Deleted 17 records from k_link_placements and 14 records from k_orders
+[2025-10-28 23:36:30] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 23:36:30] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 23:36:30] 📦 ORDERS DATA: Found 0 records from k_orders
+[2025-10-28 23:36:30] 🎯 PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 23:36:30] 📈 TOTAL LOGS: Combined total 0 logs
+[2025-10-28 23:36:32] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 23:36:32] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 23:36:32] 📦 ORDERS DATA: Found 0 records from k_orders
+[2025-10-28 23:36:32] 🎯 PLACEMENTS DATA: Found 0 records from k_link_placements
+[2025-10-28 23:36:32] 📈 TOTAL LOGS: Combined total 0 logs
+[2025-10-28 23:36:32] 🧪 TEST PLACEMENT: Manual test triggered
+[2025-10-28 23:36:32] ✅ TEST SUCCESS: Test placement data inserted
+[2025-10-28 23:36:32] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 23:36:32] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 23:36:32] 📦 ORDERS DATA: Found 0 records from k_orders
+[2025-10-28 23:36:32] 🎯 PLACEMENTS DATA: Found 1 records from k_link_placements
+[2025-10-28 23:36:32] 📈 TOTAL LOGS: Combined total 1 logs
+[2025-10-28 23:47:02] 📊 TABLE CHECK: k_link_placements exists: YES
+[2025-10-28 23:47:02] 🔍 DATA FETCH: Starting to fetch placement logs
+[2025-10-28 23:47:02] 📦 ORDERS DATA: Found 1 records from k_orders
+[2025-10-28 23:47:02] 🎯 PLACEMENTS DATA: Found 2 records from k_link_placements
+[2025-10-28 23:47:02] 📈 TOTAL LOGS: Combined total 3 logs
