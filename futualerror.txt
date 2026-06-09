@@ -1,0 +1,108 @@
+[2025-10-25 00:10:51] DEBUG - === FATURALAR.PHP STARTED ===
+[2025-10-25 00:10:51] DEBUG - User ID from session | 10
+[2025-10-25 00:10:51] DEBUG - Processing for User ID | 10
+[2025-10-25 00:10:51] DEBUG - === STEP 1: CHECKING ALL DATA IN K_FATURALAR ===
+[2025-10-25 00:10:51] DEBUG - Total records in k_faturalar table | 2
+[2025-10-25 00:10:51] DEBUG - Sample invoice 0 | {"id":1,"uid":1,"tutar":"100.00","durum":1}
+[2025-10-25 00:10:51] DEBUG - Sample invoice 1 | {"id":2,"uid":1,"tutar":"350.00","durum":0}
+[2025-10-25 00:10:51] DEBUG - === STEP 2: CHECKING INVOICES FOR USER 10 ===
+[2025-10-25 00:10:51] DEBUG - Invoices for user 10 | 0
+[2025-10-25 00:10:51] DEBUG - === STEP 3: CHECKING INVOICES FOR ANY USER ===
+[2025-10-25 00:10:51] DEBUG - Invoices for any user | 2
+[2025-10-25 00:10:51] DEBUG - === STEP 4: CHECKING TABLE STRUCTURE ===
+[2025-10-25 00:10:51] DEBUG - k_faturalar table structure | [{"field":"id","type":"int","null":"NO","key":"PRI","default":null},{"field":"uid","type":"int","null":"NO","key":"MUL","default":null},{"field":"paket_id","type":"int","null":"YES","key":"","default":null},{"field":"tutar","type":"decimal(10,2)","null":"NO","key":"","default":null},{"field":"tarih","type":"datetime","null":"NO","key":"MUL","default":"CURRENT_TIMESTAMP"},{"field":"durum","type":"tinyint(1)","null":"NO","key":"","default":"0"}]
+[2025-10-25 00:10:51] DEBUG - === STEP 5: CHECKING DIFFERENT USER IDs ===
+[2025-10-25 00:10:51] DEBUG - Different UIDs with invoices | 1
+[2025-10-25 00:10:51] DEBUG - User ID with invoices | 1
+[2025-10-25 00:10:51] DEBUG - === STEP 6: MANUAL TESTS ===
+[2025-10-25 00:10:51] DEBUG - Invoices for UID 1 | 2
+[2025-10-25 00:10:51] DEBUG - Invoices for UID 2 | 0
+[2025-10-25 00:10:51] DEBUG - Invoices for UID 3 | 0
+[2025-10-25 00:10:51] DEBUG - Invoices for UID 10 | 0
+[2025-10-25 00:10:51] DEBUG - Invoices for UID 100 | 0
+[2025-10-25 00:10:51] DEBUG - === STEP 7: CHECKING ALTERNATIVE COLUMN NAMES ===
+[2025-10-25 00:10:51] DEBUG - === FINAL RESULT ===
+[2025-10-25 00:10:51] DEBUG - Total invoices for user 10 | 0
+[2025-10-25 00:10:51] DEBUG - Invoices retrieved | 0
+[2025-10-25 00:10:51] DEBUG - === FATURALAR.PHP COMPLETED ===
+[2025-10-25 00:11:39] DEBUG - === FATURALAR.PHP STARTED ===
+[2025-10-25 00:11:39] DEBUG - User ID from session | 10
+[2025-10-25 00:11:39] DEBUG - Processing for User ID | 10
+[2025-10-25 00:11:39] DEBUG - === STEP 1: CHECKING ALL DATA IN K_FATURALAR ===
+[2025-10-25 00:11:39] DEBUG - Total records in k_faturalar table | 2
+[2025-10-25 00:11:39] DEBUG - Sample invoice 0 | {"id":1,"uid":1,"tutar":"100.00","durum":1}
+[2025-10-25 00:11:39] DEBUG - Sample invoice 1 | {"id":2,"uid":1,"tutar":"350.00","durum":0}
+[2025-10-25 00:11:39] DEBUG - === STEP 2: CHECKING INVOICES FOR USER 10 ===
+[2025-10-25 00:11:39] DEBUG - Invoices for user 10 | 0
+[2025-10-25 00:11:39] DEBUG - === STEP 3: CHECKING INVOICES FOR ANY USER ===
+[2025-10-25 00:11:39] DEBUG - Invoices for any user | 2
+[2025-10-25 00:11:39] DEBUG - === STEP 4: CHECKING TABLE STRUCTURE ===
+[2025-10-25 00:11:39] DEBUG - k_faturalar table structure | [{"field":"id","type":"int","null":"NO","key":"PRI","default":null},{"field":"uid","type":"int","null":"NO","key":"MUL","default":null},{"field":"paket_id","type":"int","null":"YES","key":"","default":null},{"field":"tutar","type":"decimal(10,2)","null":"NO","key":"","default":null},{"field":"tarih","type":"datetime","null":"NO","key":"MUL","default":"CURRENT_TIMESTAMP"},{"field":"durum","type":"tinyint(1)","null":"NO","key":"","default":"0"}]
+[2025-10-25 00:11:39] DEBUG - === STEP 5: CHECKING DIFFERENT USER IDs ===
+[2025-10-25 00:11:39] DEBUG - Different UIDs with invoices | 1
+[2025-10-25 00:11:39] DEBUG - User ID with invoices | 1
+[2025-10-25 00:11:39] DEBUG - === STEP 6: MANUAL TESTS ===
+[2025-10-25 00:11:39] DEBUG - Invoices for UID 1 | 2
+[2025-10-25 00:11:39] DEBUG - Invoices for UID 2 | 0
+[2025-10-25 00:11:39] DEBUG - Invoices for UID 3 | 0
+[2025-10-25 00:11:39] DEBUG - Invoices for UID 10 | 0
+[2025-10-25 00:11:39] DEBUG - Invoices for UID 100 | 0
+[2025-10-25 00:11:39] DEBUG - === STEP 7: CHECKING ALTERNATIVE COLUMN NAMES ===
+[2025-10-25 00:11:39] DEBUG - === FINAL RESULT ===
+[2025-10-25 00:11:39] DEBUG - Total invoices for user 10 | 0
+[2025-10-25 00:11:39] DEBUG - Invoices retrieved | 0
+[2025-10-25 00:11:39] DEBUG - === FATURALAR.PHP COMPLETED ===
+[2025-10-25 00:11:42] DEBUG - === FATURALAR.PHP STARTED ===
+[2025-10-25 00:11:42] DEBUG - User ID from session | 10
+[2025-10-25 00:11:42] DEBUG - Processing for User ID | 10
+[2025-10-25 00:11:42] DEBUG - === STEP 1: CHECKING ALL DATA IN K_FATURALAR ===
+[2025-10-25 00:11:42] DEBUG - Total records in k_faturalar table | 2
+[2025-10-25 00:11:42] DEBUG - Sample invoice 0 | {"id":1,"uid":1,"tutar":"100.00","durum":1}
+[2025-10-25 00:11:42] DEBUG - Sample invoice 1 | {"id":2,"uid":1,"tutar":"350.00","durum":0}
+[2025-10-25 00:11:42] DEBUG - === STEP 2: CHECKING INVOICES FOR USER 10 ===
+[2025-10-25 00:11:42] DEBUG - Invoices for user 10 | 0
+[2025-10-25 00:11:42] DEBUG - === STEP 3: CHECKING INVOICES FOR ANY USER ===
+[2025-10-25 00:11:42] DEBUG - Invoices for any user | 2
+[2025-10-25 00:11:42] DEBUG - === STEP 4: CHECKING TABLE STRUCTURE ===
+[2025-10-25 00:11:42] DEBUG - k_faturalar table structure | [{"field":"id","type":"int","null":"NO","key":"PRI","default":null},{"field":"uid","type":"int","null":"NO","key":"MUL","default":null},{"field":"paket_id","type":"int","null":"YES","key":"","default":null},{"field":"tutar","type":"decimal(10,2)","null":"NO","key":"","default":null},{"field":"tarih","type":"datetime","null":"NO","key":"MUL","default":"CURRENT_TIMESTAMP"},{"field":"durum","type":"tinyint(1)","null":"NO","key":"","default":"0"}]
+[2025-10-25 00:11:42] DEBUG - === STEP 5: CHECKING DIFFERENT USER IDs ===
+[2025-10-25 00:11:42] DEBUG - Different UIDs with invoices | 1
+[2025-10-25 00:11:42] DEBUG - User ID with invoices | 1
+[2025-10-25 00:11:42] DEBUG - === STEP 6: MANUAL TESTS ===
+[2025-10-25 00:11:42] DEBUG - Invoices for UID 1 | 2
+[2025-10-25 00:11:42] DEBUG - Invoices for UID 2 | 0
+[2025-10-25 00:11:42] DEBUG - Invoices for UID 3 | 0
+[2025-10-25 00:11:42] DEBUG - Invoices for UID 10 | 0
+[2025-10-25 00:11:42] DEBUG - Invoices for UID 100 | 0
+[2025-10-25 00:11:42] DEBUG - === STEP 7: CHECKING ALTERNATIVE COLUMN NAMES ===
+[2025-10-25 00:11:42] DEBUG - === FINAL RESULT ===
+[2025-10-25 00:11:42] DEBUG - Total invoices for user 10 | 0
+[2025-10-25 00:11:42] DEBUG - Invoices retrieved | 0
+[2025-10-25 00:11:42] DEBUG - === FATURALAR.PHP COMPLETED ===
+[2025-10-25 00:11:45] DEBUG - === FATURALAR.PHP STARTED ===
+[2025-10-25 00:11:45] DEBUG - User ID from session | 10
+[2025-10-25 00:11:45] DEBUG - Processing for User ID | 10
+[2025-10-25 00:11:45] DEBUG - === STEP 1: CHECKING ALL DATA IN K_FATURALAR ===
+[2025-10-25 00:11:45] DEBUG - Total records in k_faturalar table | 2
+[2025-10-25 00:11:45] DEBUG - Sample invoice 0 | {"id":1,"uid":1,"tutar":"100.00","durum":1}
+[2025-10-25 00:11:45] DEBUG - Sample invoice 1 | {"id":2,"uid":1,"tutar":"350.00","durum":0}
+[2025-10-25 00:11:45] DEBUG - === STEP 2: CHECKING INVOICES FOR USER 10 ===
+[2025-10-25 00:11:45] DEBUG - Invoices for user 10 | 0
+[2025-10-25 00:11:45] DEBUG - === STEP 3: CHECKING INVOICES FOR ANY USER ===
+[2025-10-25 00:11:45] DEBUG - Invoices for any user | 2
+[2025-10-25 00:11:45] DEBUG - === STEP 4: CHECKING TABLE STRUCTURE ===
+[2025-10-25 00:11:45] DEBUG - k_faturalar table structure | [{"field":"id","type":"int","null":"NO","key":"PRI","default":null},{"field":"uid","type":"int","null":"NO","key":"MUL","default":null},{"field":"paket_id","type":"int","null":"YES","key":"","default":null},{"field":"tutar","type":"decimal(10,2)","null":"NO","key":"","default":null},{"field":"tarih","type":"datetime","null":"NO","key":"MUL","default":"CURRENT_TIMESTAMP"},{"field":"durum","type":"tinyint(1)","null":"NO","key":"","default":"0"}]
+[2025-10-25 00:11:45] DEBUG - === STEP 5: CHECKING DIFFERENT USER IDs ===
+[2025-10-25 00:11:45] DEBUG - Different UIDs with invoices | 1
+[2025-10-25 00:11:45] DEBUG - User ID with invoices | 1
+[2025-10-25 00:11:45] DEBUG - === STEP 6: MANUAL TESTS ===
+[2025-10-25 00:11:45] DEBUG - Invoices for UID 1 | 2
+[2025-10-25 00:11:45] DEBUG - Invoices for UID 2 | 0
+[2025-10-25 00:11:45] DEBUG - Invoices for UID 3 | 0
+[2025-10-25 00:11:45] DEBUG - Invoices for UID 10 | 0
+[2025-10-25 00:11:45] DEBUG - Invoices for UID 100 | 0
+[2025-10-25 00:11:45] DEBUG - === STEP 7: CHECKING ALTERNATIVE COLUMN NAMES ===
+[2025-10-25 00:11:45] DEBUG - === FINAL RESULT ===
+[2025-10-25 00:11:45] DEBUG - Total invoices for user 10 | 0
+[2025-10-25 00:11:45] DEBUG - Invoices retrieved | 0
+[2025-10-25 00:11:45] DEBUG - === FATURALAR.PHP COMPLETED ===

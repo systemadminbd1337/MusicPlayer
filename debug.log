@@ -1,0 +1,518 @@
+[2025-10-24 23:29:11] k_link_placements table ensured
+[2025-10-24 23:29:11] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-24 23:29:11] User credit fetched: uid=10, credit=1430
+[2025-10-24 23:29:11] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-24 23:29:11] Initial fetch: 500 rows from k_linkdb
+[2025-10-24 23:29:11] Purchased links for uid=10: 35
+[2025-10-24 23:29:13] k_link_placements table ensured
+[2025-10-24 23:29:13] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-24 23:29:13] User credit fetched: uid=10, credit=1430
+[2025-10-24 23:29:13] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-24 23:29:13] Initial fetch: 500 rows from k_linkdb
+[2025-10-24 23:29:13] Purchased links for uid=10: 35
+[2025-10-24 23:29:13] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 66 rows
+[2025-10-24 23:29:13] Returning 66 new links for last_id=2350, search=''
+[2025-10-24 23:29:14] k_link_placements table ensured
+[2025-10-24 23:29:14] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-24 23:29:14] User credit fetched: uid=10, credit=1430
+[2025-10-24 23:29:14] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-24 23:29:14] Initial fetch: 500 rows from k_linkdb
+[2025-10-24 23:29:14] Purchased links for uid=10: 35
+[2025-10-24 23:29:29] k_link_placements table ensured
+[2025-10-24 23:29:29] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-24 23:29:29] User credit fetched: uid=10, credit=1430
+[2025-10-24 23:29:29] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-24 23:29:29] Initial fetch: 500 rows from k_linkdb
+[2025-10-24 23:29:29] Purchased links for uid=10: 35
+[2025-10-24 23:29:29] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-24 23:29:29] Returning 0 new links for last_id=2417, search=''
+[2025-10-24 23:29:37] k_link_placements table ensured
+[2025-10-24 23:29:37] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-24 23:29:37] User credit fetched: uid=10, credit=1430
+[2025-10-24 23:29:37] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-24 23:29:37] Initial fetch: 500 rows from k_linkdb
+[2025-10-24 23:29:37] Purchased links for uid=10: 35
+[2025-10-24 23:29:37] Bulk buy attempt: ids=[2151,1969], site_address=systemadminbd.com/botnet
+[2025-10-24 23:29:37] Attempting to place link: lid=2151, domain=yola.it, target_url=systemadminbd.com/botnet, keyword=systemadminbd, receiver_id=1
+[2025-10-24 23:29:37] No active receiver found for receiver_id=1
+[2025-10-24 23:29:37] Purchased bulk link: lid=2151, remaining balance=1429
+[2025-10-24 23:29:37] Attempting to place link: lid=1969, domain=yogatuneupjapan.net, target_url=systemadminbd.com/botnet, keyword=systemadminbd, receiver_id=1
+[2025-10-24 23:29:37] No active receiver found for receiver_id=1
+[2025-10-24 23:29:37] Purchased bulk link: lid=1969, remaining balance=1428
+[2025-10-24 23:29:44] k_link_placements table ensured
+[2025-10-24 23:29:44] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-24 23:29:44] User credit fetched: uid=10, credit=1428
+[2025-10-24 23:29:44] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-24 23:29:44] Initial fetch: 500 rows from k_linkdb
+[2025-10-24 23:29:44] Purchased links for uid=10: 37
+[2025-10-24 23:29:44] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-24 23:29:44] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:38:29] k_link_placements table ensured
+[2025-10-25 01:38:29] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:38:29] User credit fetched: uid=10, credit=2874
+[2025-10-25 01:38:29] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:38:29] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:38:29] Purchased links for uid=10: 35
+[2025-10-25 01:38:32] k_link_placements table ensured
+[2025-10-25 01:38:32] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:38:32] User credit fetched: uid=10, credit=2874
+[2025-10-25 01:38:32] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:38:32] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:38:32] Purchased links for uid=10: 35
+[2025-10-25 01:38:32] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 66 rows
+[2025-10-25 01:38:32] Returning 66 new links for last_id=2350, search=''
+[2025-10-25 01:38:32] k_link_placements table ensured
+[2025-10-25 01:38:32] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:38:32] User credit fetched: uid=10, credit=2874
+[2025-10-25 01:38:32] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:38:32] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:38:32] Purchased links for uid=10: 35
+[2025-10-25 01:38:47] k_link_placements table ensured
+[2025-10-25 01:38:47] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:38:47] User credit fetched: uid=10, credit=2874
+[2025-10-25 01:38:47] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:38:47] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:38:47] Purchased links for uid=10: 35
+[2025-10-25 01:38:47] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:38:47] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:38:49] k_link_placements table ensured
+[2025-10-25 01:38:49] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:38:49] User credit fetched: uid=10, credit=2874
+[2025-10-25 01:38:49] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:38:49] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:38:49] Purchased links for uid=10: 35
+[2025-10-25 01:38:49] Bulk buy attempt: ids=[2151,1978,1982], site_address=systemadminbd.com/botnet
+[2025-10-25 01:38:49] Attempting to place link: lid=2151, domain=yola.it, target_url=systemadminbd.com/botnet, keyword=, receiver_id=1
+[2025-10-25 01:38:49] Fixed keyword from '' to 'Yola'
+[2025-10-25 01:38:49] No active receiver found for receiver_id=1
+[2025-10-25 01:38:49] Purchased bulk link: lid=2151, remaining balance=2873
+[2025-10-25 01:38:49] Attempting to place link: lid=1978, domain=xenon.it.kmitl.ac.th, target_url=systemadminbd.com/botnet, keyword=, receiver_id=1
+[2025-10-25 01:38:49] Fixed keyword from '' to 'Xenon'
+[2025-10-25 01:38:49] No active receiver found for receiver_id=1
+[2025-10-25 01:38:49] Purchased bulk link: lid=1978, remaining balance=2872
+[2025-10-25 01:38:49] Attempting to place link: lid=1982, domain=xaijhaven.com, target_url=systemadminbd.com/botnet, keyword=, receiver_id=1
+[2025-10-25 01:38:49] Fixed keyword from '' to 'Xaijhaven'
+[2025-10-25 01:38:49] No active receiver found for receiver_id=1
+[2025-10-25 01:38:49] Purchased bulk link: lid=1982, remaining balance=2871
+[2025-10-25 01:38:53] k_link_placements table ensured
+[2025-10-25 01:38:53] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:38:53] User credit fetched: uid=10, credit=2871
+[2025-10-25 01:38:53] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:38:53] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:38:53] Purchased links for uid=10: 38
+[2025-10-25 01:38:56] k_link_placements table ensured
+[2025-10-25 01:38:56] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:38:56] User credit fetched: uid=10, credit=2871
+[2025-10-25 01:38:56] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:38:56] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:38:56] Purchased links for uid=10: 38
+[2025-10-25 01:38:56] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 66 rows
+[2025-10-25 01:38:56] Returning 66 new links for last_id=2350, search=''
+[2025-10-25 01:38:56] k_link_placements table ensured
+[2025-10-25 01:38:56] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:38:56] User credit fetched: uid=10, credit=2871
+[2025-10-25 01:38:56] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:38:56] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:38:56] Purchased links for uid=10: 38
+[2025-10-25 01:39:25] k_link_placements table ensured
+[2025-10-25 01:39:25] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:39:25] User credit fetched: uid=10, credit=2871
+[2025-10-25 01:39:25] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:39:25] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:39:25] Purchased links for uid=10: 38
+[2025-10-25 01:39:28] k_link_placements table ensured
+[2025-10-25 01:39:28] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:39:28] User credit fetched: uid=10, credit=2871
+[2025-10-25 01:39:28] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:39:28] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:39:28] Purchased links for uid=10: 38
+[2025-10-25 01:39:28] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 66 rows
+[2025-10-25 01:39:28] Returning 66 new links for last_id=2350, search=''
+[2025-10-25 01:39:28] k_link_placements table ensured
+[2025-10-25 01:39:28] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:39:28] User credit fetched: uid=10, credit=2871
+[2025-10-25 01:39:28] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:39:28] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:39:28] Purchased links for uid=10: 38
+[2025-10-25 01:39:43] k_link_placements table ensured
+[2025-10-25 01:39:43] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:39:43] User credit fetched: uid=24, credit=0
+[2025-10-25 01:39:43] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:39:43] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:39:43] k_link_placements table ensured
+[2025-10-25 01:39:43] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:39:43] User credit fetched: uid=10, credit=2871
+[2025-10-25 01:39:43] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:39:43] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:39:43] Purchased links for uid=10: 38
+[2025-10-25 01:39:43] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:39:43] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:39:47] k_link_placements table ensured
+[2025-10-25 01:39:47] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:39:47] User credit fetched: uid=24, credit=0
+[2025-10-25 01:39:47] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:39:47] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:39:47] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 66 rows
+[2025-10-25 01:39:47] Returning 66 new links for last_id=2350, search=''
+[2025-10-25 01:39:48] k_link_placements table ensured
+[2025-10-25 01:39:48] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:39:48] User credit fetched: uid=24, credit=0
+[2025-10-25 01:39:48] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:39:48] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:39:58] k_link_placements table ensured
+[2025-10-25 01:39:58] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:39:58] User credit fetched: uid=10, credit=2871
+[2025-10-25 01:39:58] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:39:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:39:58] Purchased links for uid=10: 38
+[2025-10-25 01:39:58] Bulk buy attempt: ids=[2281,2084], site_address=systemadminbd.com/botnet
+[2025-10-25 01:39:58] Attempting to place link: lid=2281, domain=uota-it.com, target_url=systemadminbd.com/botnet, keyword=meoooooo, receiver_id=1
+[2025-10-25 01:39:58] No active receiver found for receiver_id=1
+[2025-10-25 01:39:58] Purchased bulk link: lid=2281, remaining balance=2870
+[2025-10-25 01:39:58] Attempting to place link: lid=2084, domain=uop.edu.pk, target_url=systemadminbd.com/botnet, keyword=meoooooo, receiver_id=1
+[2025-10-25 01:39:58] No active receiver found for receiver_id=1
+[2025-10-25 01:39:58] Purchased bulk link: lid=2084, remaining balance=2869
+[2025-10-25 01:39:58] k_link_placements table ensured
+[2025-10-25 01:39:58] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:39:58] User credit fetched: uid=10, credit=2869
+[2025-10-25 01:39:58] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:39:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:39:58] Purchased links for uid=10: 40
+[2025-10-25 01:39:58] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:39:58] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:40:03] k_link_placements table ensured
+[2025-10-25 01:40:03] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:40:03] User credit fetched: uid=24, credit=0
+[2025-10-25 01:40:03] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:40:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:40:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:40:03] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:54:27] k_link_placements table ensured
+[2025-10-25 01:54:27] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:54:27] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:54:27] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:54:27] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:54:27] Purchased links for uid=10: 39
+[2025-10-25 01:54:30] k_link_placements table ensured
+[2025-10-25 01:54:30] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:54:30] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:54:30] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:54:30] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:54:30] Purchased links for uid=10: 39
+[2025-10-25 01:54:30] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 66 rows
+[2025-10-25 01:54:30] Returning 66 new links for last_id=2350, search=''
+[2025-10-25 01:54:31] k_link_placements table ensured
+[2025-10-25 01:54:31] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:54:31] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:54:31] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:54:31] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:54:31] Purchased links for uid=10: 39
+[2025-10-25 01:54:45] k_link_placements table ensured
+[2025-10-25 01:54:45] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:54:45] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:54:45] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:54:45] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:54:45] Purchased links for uid=10: 39
+[2025-10-25 01:54:45] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:54:45] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:54:54] k_link_placements table ensured
+[2025-10-25 01:54:54] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:54:54] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:54:54] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:54:54] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:54:54] Purchased links for uid=10: 39
+[2025-10-25 01:54:54] Bulk buy attempt: ids=[2398], site_address=systemadminbd.com/botnet, duration=1m
+[2025-10-25 01:54:54] Error in bulk buy: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'duration' in 'field list'
+[2025-10-25 01:54:57] k_link_placements table ensured
+[2025-10-25 01:54:57] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:54:57] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:54:57] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:54:57] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:54:57] Purchased links for uid=10: 39
+[2025-10-25 01:54:57] Bulk buy attempt: ids=[2398], site_address=systemadminbd.com/botnet, duration=1m
+[2025-10-25 01:54:57] Error in bulk buy: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'duration' in 'field list'
+[2025-10-25 01:55:00] k_link_placements table ensured
+[2025-10-25 01:55:00] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:55:00] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:55:00] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:55:00] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:55:00] Purchased links for uid=10: 39
+[2025-10-25 01:55:00] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:55:00] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:55:15] k_link_placements table ensured
+[2025-10-25 01:55:15] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:55:15] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:55:15] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:55:15] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:55:15] Purchased links for uid=10: 39
+[2025-10-25 01:55:15] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:55:15] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:55:32] k_link_placements table ensured
+[2025-10-25 01:55:32] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:55:32] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:55:32] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:55:32] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:55:32] Purchased links for uid=10: 39
+[2025-10-25 01:55:32] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:55:32] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:55:48] k_link_placements table ensured
+[2025-10-25 01:55:48] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:55:48] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:55:48] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:55:48] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:55:48] Purchased links for uid=10: 39
+[2025-10-25 01:55:48] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:55:48] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:56:04] k_link_placements table ensured
+[2025-10-25 01:56:04] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:56:04] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:56:04] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:56:04] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:56:04] Purchased links for uid=10: 39
+[2025-10-25 01:56:04] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:56:04] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:56:20] k_link_placements table ensured
+[2025-10-25 01:56:20] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:56:20] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:56:20] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:56:20] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:56:20] Purchased links for uid=10: 39
+[2025-10-25 01:56:20] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:56:20] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:57:01] k_link_placements table ensured
+[2025-10-25 01:57:01] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:57:01] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:57:01] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:57:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:57:01] Purchased links for uid=10: 39
+[2025-10-25 01:57:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:57:01] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:58:01] k_link_placements table ensured
+[2025-10-25 01:58:01] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:58:01] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:58:01] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:58:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:58:01] Purchased links for uid=10: 39
+[2025-10-25 01:58:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:58:01] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 01:59:01] k_link_placements table ensured
+[2025-10-25 01:59:01] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 01:59:01] User credit fetched: uid=10, credit=2865
+[2025-10-25 01:59:01] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 01:59:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 01:59:01] Purchased links for uid=10: 39
+[2025-10-25 01:59:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 01:59:01] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:00:01] k_link_placements table ensured
+[2025-10-25 02:00:01] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:00:01] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:00:01] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:00:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:00:01] Purchased links for uid=10: 39
+[2025-10-25 02:00:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:00:01] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:00:17] k_link_placements table ensured
+[2025-10-25 02:00:17] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:00:17] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:00:17] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:00:17] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:00:17] Purchased links for uid=10: 39
+[2025-10-25 02:00:17] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:00:17] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:00:33] k_link_placements table ensured
+[2025-10-25 02:00:33] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:00:33] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:00:33] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:00:33] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:00:33] Purchased links for uid=10: 39
+[2025-10-25 02:00:33] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:00:33] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:00:49] k_link_placements table ensured
+[2025-10-25 02:00:49] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:00:49] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:00:49] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:00:49] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:00:49] Purchased links for uid=10: 39
+[2025-10-25 02:00:49] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:00:49] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:01:05] k_link_placements table ensured
+[2025-10-25 02:01:05] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:01:05] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:01:05] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:01:05] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:01:05] Purchased links for uid=10: 39
+[2025-10-25 02:01:05] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:01:05] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:02:01] k_link_placements table ensured
+[2025-10-25 02:02:01] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:02:01] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:02:01] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:02:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:02:01] Purchased links for uid=10: 39
+[2025-10-25 02:02:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:02:01] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:03:01] k_link_placements table ensured
+[2025-10-25 02:03:01] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:03:01] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:03:01] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:03:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:03:01] Purchased links for uid=10: 39
+[2025-10-25 02:03:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:03:01] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:04:01] k_link_placements table ensured
+[2025-10-25 02:04:01] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:04:01] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:04:01] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:04:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:04:01] Purchased links for uid=10: 39
+[2025-10-25 02:04:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:04:01] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:05:01] k_link_placements table ensured
+[2025-10-25 02:05:01] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:05:01] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:05:01] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:05:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:05:01] Purchased links for uid=10: 39
+[2025-10-25 02:05:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:05:01] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:05:11] k_link_placements table ensured
+[2025-10-25 02:05:11] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:05:11] Added duration column to k_orders table
+[2025-10-25 02:05:11] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:05:11] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:05:11] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:05:11] Purchased links for uid=10: 39
+[2025-10-25 02:05:14] k_link_placements table ensured
+[2025-10-25 02:05:14] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:05:14] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:05:14] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:05:14] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:05:14] Purchased links for uid=10: 39
+[2025-10-25 02:05:14] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 66 rows
+[2025-10-25 02:05:14] Returning 66 new links for last_id=2350, search=''
+[2025-10-25 02:05:14] k_link_placements table ensured
+[2025-10-25 02:05:14] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:05:14] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:05:14] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:05:14] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:05:14] Purchased links for uid=10: 39
+[2025-10-25 02:05:30] k_link_placements table ensured
+[2025-10-25 02:05:30] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:05:30] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:05:30] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:05:30] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:05:30] Purchased links for uid=10: 39
+[2025-10-25 02:05:30] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:05:30] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:05:34] k_link_placements table ensured
+[2025-10-25 02:05:34] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:05:34] User credit fetched: uid=10, credit=2865
+[2025-10-25 02:05:34] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:05:34] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:05:34] Purchased links for uid=10: 39
+[2025-10-25 02:05:34] Bulk buy attempt: ids=[2398], site_address=systemadminbd.com/botnet, duration=3m
+[2025-10-25 02:05:34] Attempting to place link: lid=2398, domain=systemadminbd.com, target_url=systemadminbd.com/botnet, keyword=meoooooo, receiver_id=1
+[2025-10-25 02:05:34] No active receiver found for receiver_id=1
+[2025-10-25 02:05:34] Purchased bulk link: lid=2398, cost=4, remaining balance=2861
+[2025-10-25 02:24:42] k_link_placements table ensured
+[2025-10-25 02:24:42] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:24:42] User credit fetched: uid=10, credit=2856
+[2025-10-25 02:24:42] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:24:42] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:24:42] Purchased links for uid=10: 40
+[2025-10-25 02:24:45] k_link_placements table ensured
+[2025-10-25 02:24:45] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:24:45] User credit fetched: uid=10, credit=2856
+[2025-10-25 02:24:45] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:24:45] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:24:45] Purchased links for uid=10: 40
+[2025-10-25 02:24:45] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 66 rows
+[2025-10-25 02:24:45] Returning 66 new links for last_id=2350, search=''
+[2025-10-25 02:24:45] k_link_placements table ensured
+[2025-10-25 02:24:45] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:24:45] User credit fetched: uid=10, credit=2856
+[2025-10-25 02:24:45] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:24:45] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:24:45] Purchased links for uid=10: 40
+[2025-10-25 02:25:00] k_link_placements table ensured
+[2025-10-25 02:25:00] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:25:00] User credit fetched: uid=10, credit=2856
+[2025-10-25 02:25:00] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:25:00] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:25:00] Purchased links for uid=10: 40
+[2025-10-25 02:25:00] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:25:00] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:25:15] k_link_placements table ensured
+[2025-10-25 02:25:15] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:25:15] User credit fetched: uid=10, credit=2856
+[2025-10-25 02:25:15] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:25:15] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:25:15] Purchased links for uid=10: 40
+[2025-10-25 02:25:15] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:25:15] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:25:21] k_link_placements table ensured
+[2025-10-25 02:25:21] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:25:21] User credit fetched: uid=10, credit=2856
+[2025-10-25 02:25:21] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:25:21] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:25:21] Purchased links for uid=10: 40
+[2025-10-25 02:25:21] Bulk buy attempt: ids=[1922,1994,2143], site_address=systemadminbd.net/botnet, duration=1m
+[2025-10-25 02:25:21] Attempting to place link: lid=1922, domain=ug.zawoja.pl, target_url=systemadminbd.net/botnet, keyword=systemadminbd, receiver_id=1
+[2025-10-25 02:25:21] Using manual keyword: 'systemadminbd'
+[2025-10-25 02:25:21] No active receiver found for receiver_id=1
+[2025-10-25 02:25:21] Purchased bulk link: lid=1922, cost=2, remaining balance=2854
+[2025-10-25 02:25:21] Attempting to place link: lid=1994, domain=trilliumbrilliantschool.in, target_url=systemadminbd.net/botnet, keyword=systemadminbd, receiver_id=1
+[2025-10-25 02:25:21] Using manual keyword: 'systemadminbd'
+[2025-10-25 02:25:21] No active receiver found for receiver_id=1
+[2025-10-25 02:25:21] Purchased bulk link: lid=1994, cost=2, remaining balance=2852
+[2025-10-25 02:25:21] Attempting to place link: lid=2143, domain=tpa.upnb.ac.id, target_url=systemadminbd.net/botnet, keyword=systemadminbd, receiver_id=1
+[2025-10-25 02:25:21] Using manual keyword: 'systemadminbd'
+[2025-10-25 02:25:21] No active receiver found for receiver_id=1
+[2025-10-25 02:25:21] Purchased bulk link: lid=2143, cost=2, remaining balance=2850
+[2025-10-25 02:36:36] k_link_placements table ensured
+[2025-10-25 02:36:36] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:36:36] User credit fetched: uid=10, credit=2850
+[2025-10-25 02:36:36] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:36:36] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:36:36] Purchased links for uid=10: 23
+[2025-10-25 02:36:39] k_link_placements table ensured
+[2025-10-25 02:36:39] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:36:39] User credit fetched: uid=10, credit=2850
+[2025-10-25 02:36:39] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:36:39] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:36:39] Purchased links for uid=10: 23
+[2025-10-25 02:36:39] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 66 rows
+[2025-10-25 02:36:39] Returning 66 new links for last_id=2350, search=''
+[2025-10-25 02:36:40] k_link_placements table ensured
+[2025-10-25 02:36:40] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:36:40] User credit fetched: uid=10, credit=2850
+[2025-10-25 02:36:40] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:36:40] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:36:40] Purchased links for uid=10: 23
+[2025-10-25 02:36:55] k_link_placements table ensured
+[2025-10-25 02:36:55] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:36:55] User credit fetched: uid=10, credit=2850
+[2025-10-25 02:36:55] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:36:55] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:36:55] Purchased links for uid=10: 23
+[2025-10-25 02:36:55] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2417' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-25 02:36:55] Returning 0 new links for last_id=2417, search=''
+[2025-10-25 02:37:03] k_link_placements table ensured
+[2025-10-25 02:37:03] Error creating k_receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-25 02:37:03] User credit fetched: uid=10, credit=2850
+[2025-10-25 02:37:03] Stats: totalLinks=2416, totalCredit=3998374118124, phpCount=2401, jsCount=2
+[2025-10-25 02:37:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-25 02:37:03] Purchased links for uid=10: 23
+[2025-10-25 02:37:03] Bulk buy attempt: ids=[2057,1923,2296], site_address=systemadminbd.com/botnet, duration=1m
+[2025-10-25 02:37:03] Attempting to place link: lid=2057, domain=zukunft.akbk-horrem.de, target_url=systemadminbd.com/botnet, keyword=systemadminbd, receiver_id=1
+[2025-10-25 02:37:03] Using user provided keyword: 'systemadminbd'
+[2025-10-25 02:37:03] No active receiver found for receiver_id=1
+[2025-10-25 02:37:03] Purchased bulk link: lid=2057, cost=2, remaining balance=2848
+[2025-10-25 02:37:03] Attempting to place link: lid=1923, domain=zawoja.pl, target_url=systemadminbd.com/botnet, keyword=systemadminbd, receiver_id=1
+[2025-10-25 02:37:03] Using user provided keyword: 'systemadminbd'
+[2025-10-25 02:37:03] No active receiver found for receiver_id=1
+[2025-10-25 02:37:03] Purchased bulk link: lid=1923, cost=2, remaining balance=2846
+[2025-10-25 02:37:03] Attempting to place link: lid=2296, domain=zardasht.ir, target_url=systemadminbd.com/botnet, keyword=systemadminbd, receiver_id=1
+[2025-10-25 02:37:03] Using user provided keyword: 'systemadminbd'
+[2025-10-25 02:37:03] No active receiver found for receiver_id=1
+[2025-10-25 02:37:03] Purchased bulk link: lid=2296, cost=2, remaining balance=2844

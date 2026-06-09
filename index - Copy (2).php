@@ -1,0 +1,519 @@
+<?php
+// index.php — Full Dashboard with "Renew Package" (pay_type=renew) submission
+include "header.php";
+
+if (empty($_SESSION['user'])) { redirect('login.php'); exit(); }
+$user = is_object($_SESSION['user']) ? $_SESSION['user'] : (object)$_SESSION['user'];
+$uid  = (int)$user->id;
+
+// ---------- Helpers ----------
+function safe_get_var($sql, $def = 0){ global $db;
+  try { $v = $db->get_var($sql); return $v === null ? $def : $v; } catch(Throwable $e){ return $def; }
+}
+function safe_get_results($sql){ global $db;
+  try { return $db->get_results($sql, ARRAY_A) ?: []; } catch(Throwable $e){ return []; }
+}
+function dbx($v){ global $db; return (isset($db) && method_exists($db,'escape')) ? $db->escape($v) : addslashes($v); }
+
+// ---------- (SAFE) Ensure payments table + pay_type support ----------
+try {
+  // create table if missing
+  $db->query("
+    CREATE TABLE IF NOT EXISTS k_payments (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      uid INT NOT NULL,
+      paket_id INT NOT NULL,
+      currency ENUM('USDT','BTC','ETH','SOL') DEFAULT 'USDT',
+      amount DECIMAL(10,2) DEFAULT 0.00,
+      txn_id VARCHAR(150) DEFAULT NULL,
+      status ENUM('pending','approved','rejected') DEFAULT 'pending',
+      pay_type ENUM('purchase','renew') DEFAULT 'purchase',
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      approved_at DATETIME NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  ");
+} catch(Throwable $e) {}
+
+try {
+  // add column pay_type if missing (best-effort)
+  $cols = safe_get_results("SELECT COLUMN_NAME FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'k_payments'");
+  $colNames = array_map(fn($r)=>strtolower($r['COLUMN_NAME']), $cols);
+  if (!in_array('pay_type', $colNames)) {
+    $db->query("ALTER TABLE k_payments ADD COLUMN pay_type ENUM('purchase','renew') DEFAULT 'purchase' AFTER status");
+  }
+} catch(Throwable $e){}
+
+try {
+  // ensure 'renew' exists in ENUM set (some MySQL variants need modify)
+  // Note: This is best-effort; if it fails due to insufficient perms/variant, ignore.
+  $db->query("ALTER TABLE k_payments MODIFY pay_type ENUM('purchase','renew') DEFAULT 'purchase'");
+} catch(Throwable $e){}
+
+// ---------- Fetch User & Package Info ----------
+$uinfo = $db->get_row("SELECT * FROM k_users WHERE id='{$uid}'");
+$active_paket = null;
+if (!empty($uinfo->paket_id)) {
+    $active_paket = $db->get_row("SELECT id, baslik, kota, sure, fiyat FROM k_paketler WHERE id='{$uinfo->paket_id}'");
+}
+$today   = new DateTime();
+$expire  = !empty($uinfo->paket_expire) ? new DateTime($uinfo->paket_expire) : null;
+$remDays = ($expire) ? max(0, $today->diff($expire)->days) : 0;
+
+// ---------- Handle Renew Submit (POST) ----------
+$msg = '';
+if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['action']) && $_POST['action']==='renew_submit') {
+  $paket_id = (int)($_POST['paket_id'] ?? 0);
+  $currency = trim($_POST['currency'] ?? 'USDT');
+  $txn_id   = trim($_POST['txn_id'] ?? '');
+
+  if ($paket_id <= 0 || $txn_id === '') {
+    $msg = '<div class="alert alert-warning">⚠️ Please provide a valid transaction hash and package.</div>';
+  } else {
+    // verify paket
+    $pk = $db->get_row("SELECT id, baslik, fiyat FROM k_paketler WHERE id='{$paket_id}'");
+    if (!$pk) {
+      $msg = '<div class="alert alert-danger">❌ Invalid package selected.</div>';
+    } else {
+      $amount = (float)($pk->fiyat ?? 0);
+      $db->query("INSERT INTO k_payments (uid, paket_id, currency, amount, txn_id, status, pay_type, created_at)
+                  VALUES ('{$uid}', '{$paket_id}', '".dbx($currency)."', '{$amount}', '".dbx($txn_id)."', 'pending', 'renew', NOW())");
+      $msg = '<div class="alert alert-success">✅ Renewal request submitted! Please wait for admin approval.</div>';
+    }
+  }
+}
+
+// ---------- User Stats ----------
+$singleLinks   = (int)safe_get_var("SELECT COUNT(*) FROM k_single WHERE uid={$uid}");
+$multiLinks    = (int)safe_get_var("SELECT COUNT(*) FROM k_multi WHERE uid={$uid} AND tip='1'");
+$multiAnchors  = (int)safe_get_var("SELECT COUNT(*) FROM k_multi WHERE uid={$uid} AND tip='2'");
+$orderCount    = (int)safe_get_var("SELECT COUNT(*) FROM (
+  SELECT id FROM k_single WHERE uid={$uid}
+  UNION ALL
+  SELECT id FROM k_multi  WHERE uid={$uid}
+) AS links", 0);
+
+// Kota usage
+$user_kota     = (int)($uinfo->kota ?? 0);
+$quotaUsedPct  = $user_kota > 0 ? min(100, round(($singleLinks / max(1,$user_kota)) * 100)) : 0;
+
+// Global Stats
+$total_sites      = (int)safe_get_var("SELECT COUNT(*) FROM k_sites",0);
+$purchased_links  = (int)safe_get_var("SELECT COUNT(*) FROM k_orders",0);
+$total_expense    = safe_get_var("SELECT COALESCE(SUM(price),0) FROM k_orders",0);
+
+// ---------- TLD & History ----------
+$tld_rows = safe_get_results("
+  SELECT COALESCE(NULLIF(tld,''), LOWER(SUBSTRING_INDEX(domain,'.',-1))) AS tld, COUNT(*) AS c
+  FROM k_sites
+  GROUP BY tld
+  ORDER BY c DESC
+  LIMIT 8
+");
+
+$hist_rows = safe_get_results("
+  SELECT DATE(created_at) AS d, COUNT(*) AS c
+  FROM k_orders
+  WHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 13 DAY)
+  GROUP BY DATE(created_at)
+  ORDER BY d ASC
+");
+
+// ---------- Logs (Last Login) ----------
+$log_rows = safe_get_results("
+  SELECT ip, country, created_at
+  FROM k_user_login_logs
+  WHERE user_id='{$uid}'
+  ORDER BY id DESC
+  LIMIT 5
+");
+if (!$log_rows) {
+  $log_rows = safe_get_results("
+    SELECT last_login_ip AS ip, last_login_country AS country, last_login_time AS created_at
+    FROM k_users
+    WHERE id='{$uid}'
+    LIMIT 1
+  ");
+}
+
+// ---------- Announcements ----------
+$ann_rows = safe_get_results("
+  SELECT title, message, author, created_at
+  FROM k_announcements
+  WHERE COALESCE(visible,1)=1
+  ORDER BY id DESC
+  LIMIT 5
+");
+
+// ---------- Chart Data Prep ----------
+$tld_labels = array_column($tld_rows,'tld');
+$tld_counts = array_map('intval', array_column($tld_rows,'c'));
+
+$link_map = [];
+foreach($hist_rows as $r){ $link_map[$r['d']] = $r['c']; }
+$labels=[]; $counts=[];
+$start=new DateTime('-13 days');
+for($i=0;$i<14;$i++){ $d=(clone $start)->modify("+{$i} day"); $k=$d->format('Y-m-d'); $labels[]=$k; $counts[]=$link_map[$k]??0; }
+
+// ---------- Active Package fallback texts ----------
+$pkgTitle = $active_paket ? ($active_paket->baslik) : 'Free';
+$pkgKota  = $active_paket ? (int)$active_paket->kota : 0;
+$pkgSure  = $active_paket ? (int)$active_paket->sure : 0;
+$pkgFiyat = $active_paket ? (float)$active_paket->fiyat : 0;
+
+// ---------- Wallets (hard-coded; replace with your real wallets) ----------
+$wallets = [
+  'USDT' => 'TW8A8hjxKXx95qgZQ8wQeZuXJf76Aa23Tx', // TRC-20 sample
+  'BTC'  => 'bc1qmybtcaddresstest1234567xyz',
+  'ETH'  => '0x8eA9DfAAc1b77bD8d23E55C7E6CcD16aE7C1B97f',
+  'SOL'  => '7A4gx8tpsSFaN1vTtqsm3z7kLULoCkTrfE5u1k8YpDFZ'
+];
+?>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dashboard - HackLink</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body{
+  background:radial-gradient(circle at 20% 20%,#0a0f1e 0%,#030611 40%,#000 100%)!important;
+  color:#fff!important;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(96,165,250,.12), transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(239,68,68,.1), transparent 60%),
+    radial-gradient(circle at 0% 100%, rgba(250,204,21,.1), transparent 70%);
+  mix-blend-mode:screen;
+}
+.container{position:relative;z-index:1;}
+.card.neon, .procard{
+  background:rgba(8,12,24,.65);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:14px;
+  box-shadow:0 8px 30px rgba(0,0,0,.6);
+  backdrop-filter:blur(8px);
+}
+.procard h5{color:#fff;font-weight:600;margin-bottom:.35rem}
+.procard p.stat{
+  font-size:2.1rem; font-weight:800; color:#ef4444;
+  text-shadow:0 0 10px rgba(239,68,68,.6); margin:0;
+}
+.progress{height:8px;background:#17172a;border-radius:6px;overflow:hidden;margin-top:8px;}
+.progress-bar{background:linear-gradient(90deg,#00ff9d,#00e6ff);}
+.panel-title{color:#fff;text-shadow:0 0 8px rgba(255,255,255,.3);}
+.text-muted{color:#ccc!important;}
+.table.table-dark thead th{color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
+.table.table-dark tbody td{color:#ddd;border-color:rgba(255,255,255,.05)!important;}
+#tldChart{max-height:180px!important; filter:drop-shadow(0 0 10px rgba(96,165,250,.4));}
+.ann-item{padding:.5rem .75rem; border:1px solid rgba(255,255,255,.08); border-radius:10px; margin-bottom:.5rem; background:rgba(0,0,0,0.25);}
+.btn-renew{margin-top:.65rem; background:linear-gradient(90deg,#22c55e,#06b6d4); border:none; color:#001a17; font-weight:800;}
+.wallet-box {font-family:monospace; background:#0b1326; border:1px solid rgba(255,255,255,.08); color:#cdeafe; border-radius:10px; padding:.75rem; text-align:center;}
+</style>
+</head>
+<body>
+
+<div class="container my-4">
+
+  <?=$msg?>
+
+  <div class="mb-2">
+    <h2 class="mb-0">📊 Dashboard</h2>
+    <p class="text-muted mb-0">Welcome back, <?=htmlspecialchars($user->username ?? 'User')?> — overview of your links & activity.</p>
+  </div>
+
+  <!-- Top Stats -->
+  <div class="row g-4 mb-4">
+
+    <!-- Active Package / Renew -->
+    <div class="col-md-6 col-xl-3">
+      <div class="procard p-3 text-center h-100">
+        <h5>📦 Active Package</h5>
+        <?php if($active_paket): ?>
+          <p class="stat"><?=htmlspecialchars($pkgTitle)?></p>
+          <small class="text-muted d-block mb-1">
+            Kota: <?= $pkgKota === 0 ? 'Unlimited' : $pkgKota ?> |
+            Valid: <?= htmlspecialchars($uinfo->paket_expire ?? '-') ?>
+          </small>
+          <small class="text-info d-block">⏳ <?=$remDays?> day(s) left</small>
+          <!-- Renew Button -->
+          <button class="btn btn-renew w-100" data-bs-toggle="modal" data-bs-target="#renewModal">
+            🔄 Renew Package
+          </button>
+        <?php else: ?>
+          <p class="stat text-warning">Free</p>
+          <small class="text-muted">No active package</small>
+          <div class="mt-2">
+            <a class="btn btn-warning w-100" href="paketler.php">🛒 Buy Package</a>
+          </div>
+        <?php endif; ?>
+      </div>
+    </div>
+
+    <!-- Your Backlinks -->
+    <div class="col-md-6 col-xl-3">
+      <div class="procard p-3 text-center h-100">
+        <h5>🔗 Your Backlinks</h5>
+        <p class="stat"><?=$multiLinks?></p>
+        <small class="text-muted">k_multi.tip='1'</small>
+      </div>
+    </div>
+
+    <!-- Your Anchors -->
+    <div class="col-md-6 col-xl-3">
+      <div class="procard p-3 text-center h-100">
+        <h5>🏷️ Your Anchors</h5>
+        <p class="stat"><?=$multiAnchors?></p>
+        <small class="text-muted">k_multi.tip='2'</small>
+      </div>
+    </div>
+
+    <!-- Link Database -->
+    <div class="col-md-6 col-xl-3">
+      <div class="procard p-3 text-center h-100">
+        <h5>💾 Link Database</h5>
+        <p class="stat"><?=$orderCount?></p>
+        <small class="text-muted">Total you added (single + multi)</small>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- General Stats -->
+  <div class="card neon p-3 mb-4">
+    <h5 class="panel-title mb-1">📈 General Statistics</h5>
+    <small>Overview of site & order metrics</small>
+    <div class="mt-3 row g-3">
+      <div class="col-md-4">
+        <div class="p-3 neon" style="border:1px solid rgba(255,255,255,.06);border-radius:12px;">
+          <div class="d-flex gap-3 align-items-center">
+            <div style="width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-size:18px;background:linear-gradient(135deg,#60a5fa,#a855f7);color:#061025;">🌐</div>
+            <div>
+              <div class="panel-title">Total Sites</div>
+              <div class="h4 mb-0"><?=$total_sites?></div>
+              <small class="text-muted">Tracked domains</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 neon" style="border:1px solid rgba(255,255,255,.06);border-radius:12px;">
+          <div class="d-flex gap-3 align-items-center">
+            <div style="width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-size:18px;background:linear-gradient(135deg,#60a5fa,#a855f7);color:#061025;">💳</div>
+            <div>
+              <div class="panel-title">Total Expense</div>
+              <div class="h4 mb-0"><?=$total_expense?></div>
+              <small class="text-muted">Sum of orders</small>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="col-md-4">
+        <div class="p-3 neon" style="border:1px solid rgba(255,255,255,.06);border-radius:12px;">
+          <div class="d-flex gap-3 align-items-center">
+            <div style="width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-size:18px;background:linear-gradient(135deg,#60a5fa,#a855f7);color:#061025;">🔗</div>
+            <div>
+              <div class="panel-title">Purchased Links</div>
+              <div class="h4 mb-0"><?=$purchased_links?></div>
+              <small class="text-muted">Orders count</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts + Lists -->
+  <div class="row g-4">
+    <!-- TLD Chart -->
+    <div class="col-md-6">
+      <div class="card neon p-3 h-100">
+        <strong class="panel-title">Link Pool by TLD</strong>
+        <canvas id="tldChart" height="180"></canvas>
+      </div>
+    </div>
+    <!-- History Chart -->
+    <div class="col-md-6">
+      <div class="card neon p-3 h-100">
+        <strong class="panel-title">Link History (14 days)</strong>
+        <canvas id="histChart" height="180"></canvas>
+      </div>
+    </div>
+
+    <!-- Last 10 Login Records -->
+    <div class="col-md-6">
+      <div class="card neon p-3 h-100">
+        <strong class="panel-title">Last Login Records</strong>
+        <table class="table table-sm table-dark mt-2">
+          <thead><tr><th>#</th><th>IP</th><th>Country</th><th>Date</th></tr></thead>
+          <tbody>
+          <?php if ($log_rows){ $i=1; foreach($log_rows as $r){ ?>
+            <tr>
+              <td><?=$i++?></td>
+              <td><?=htmlspecialchars($r['ip'] ?? '-')?></td>
+              <td><?=htmlspecialchars($r['country'] ?? '-')?></td>
+              <td><?=htmlspecialchars($r['created_at'] ?? '-')?></td>
+            </tr>
+          <?php } } else { ?>
+            <tr><td colspan="4">No login records found.</td></tr>
+          <?php } ?>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Announcements -->
+    <div class="col-md-6">
+      <div class="card neon p-3 h-100">
+        <strong class="panel-title">Announcements</strong>
+        <div class="mt-2">
+          <?php if ($ann_rows){
+            foreach($ann_rows as $a){ ?>
+              <div class="ann-item">
+                <strong><?=htmlspecialchars($a['title'])?></strong><br>
+                <small class="text-muted"><?=htmlspecialchars($a['created_at'])?></small>
+                <div class="mt-1"><?=nl2br(htmlspecialchars($a['message']))?></div>
+              </div>
+            <?php }
+          } else { ?>
+            <div>No announcements</div>
+          <?php } ?>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 🔄 Renew Modal -->
+<div class="modal fade" id="renewModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background:#11172b; color:#fff; border-radius:14px;">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">🔄 Renew: <?=htmlspecialchars($pkgTitle)?> (<?=$pkgSure?> days)</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <?php if(!$active_paket): ?>
+          <div class="alert alert-warning">No active package to renew. Please purchase a package first.</div>
+        <?php else: ?>
+        <form method="post">
+          <input type="hidden" name="action" value="renew_submit">
+          <input type="hidden" name="paket_id" value="<?= (int)$active_paket->id ?>">
+
+          <div class="mb-3">
+            <label class="form-label text-light">Select Currency</label>
+            <select name="currency" id="renewCurrency" class="form-select bg-dark text-light">
+              <option value="USDT" selected>USDT (TRC20)</option>
+              <option value="BTC">BTC (Bitcoin)</option>
+              <option value="ETH">ETH (Ethereum)</option>
+              <option value="SOL">SOL (Solana)</option>
+            </select>
+          </div>
+
+          <div class="wallet-box mb-3" id="renewWallet">
+            Send <?= number_format($pkgFiyat,2) ?> USDT equivalent to:
+            <div><strong id="renewWalletAddr"><?=htmlspecialchars($wallets['USDT'])?></strong></div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label text-light">Transaction ID / Tx Hash</label>
+            <input type="text" name="txn_id" class="form-control bg-dark text-light" placeholder="Enter TxID or Hash" required>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">Submit Renewal</button>
+        </form>
+        <?php endif; ?>
+      </div>
+      <div class="modal-footer border-0">
+        <small class="text-muted">Your request will be reviewed by admin. On approval, validity extends by <?=$pkgSure?> day(s).</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php include "footer.php"; ?>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// ----- Charts -----
+(() => {
+  const tldLabels = <?=json_encode($tld_labels)?>;
+  const tldCounts = <?=json_encode($tld_counts)?>;
+  const tldCtx = document.getElementById('tldChart')?.getContext('2d');
+  if (tldCtx && tldLabels.length) {
+    new Chart(tldCtx, {
+      type: 'doughnut',
+      data: {
+        labels: tldLabels,
+        datasets: [{
+          data: tldCounts,
+          backgroundColor: [
+            'rgba(239,68,68,.9)','rgba(96,165,250,.9)','rgba(168,85,247,.9)',
+            'rgba(16,185,129,.9)','rgba(249,115,22,.9)','rgba(236,72,153,.9)',
+            'rgba(99,102,241,.9)','rgba(14,165,233,.9)'
+          ],
+          borderColor:'rgba(255,255,255,0.05)', borderWidth:1, hoverOffset:6
+        }]
+      },
+      options:{plugins:{legend:{position:'bottom',labels:{color:'#fff',font:{size:11}}}},cutout:'80%'}
+    });
+  }
+
+  const hLabels = <?=json_encode($labels)?>;
+  const hCounts = <?=json_encode($counts)?>;
+  const hCtx = document.getElementById('histChart')?.getContext('2d');
+  if (hCtx) {
+    const gradient = hCtx.createLinearGradient(0,0,0,220);
+    gradient.addColorStop(0,'rgba(239,68,68,0.9)');
+    gradient.addColorStop(1,'rgba(168,85,247,0.25)');
+    new Chart(hCtx, {
+      type: 'line',
+      data: {
+        labels: hLabels,
+        datasets: [{
+          label: 'Purchases',
+          data: hCounts,
+          fill: true,
+          tension: .35,
+          borderWidth: 2.5,
+          borderColor: 'rgba(239,68,68,0.95)',
+          backgroundColor: gradient,
+          pointRadius: 3.5,
+          pointBackgroundColor: '#ef4444'
+        }]
+      },
+      options: {
+        scales: {
+          x:{ticks:{color:'#e0e0e0'},grid:{color:'rgba(148,163,184,0.05)'}},
+          y:{ticks:{color:'#e0e0e0'},grid:{color:'rgba(148,163,184,0.05)'},beginAtZero:true}
+        },
+        plugins:{legend:{display:false}},
+        animation:{duration:900,easing:'easeOutQuart'}
+      }
+    });
+  }
+})();
+
+// ----- Renew wallet switcher -----
+(() => {
+  const wallets = {
+    USDT: <?=json_encode($wallets['USDT'])?>,
+    BTC:  <?=json_encode($wallets['BTC'])?>,
+    ETH:  <?=json_encode($wallets['ETH'])?>,
+    SOL:  <?=json_encode($wallets['SOL'])?>
+  };
+  const sel = document.getElementById('renewCurrency');
+  const addr = document.getElementById('renewWalletAddr');
+  if (sel && addr) {
+    sel.addEventListener('change', () => {
+      addr.textContent = wallets[sel.value] || wallets['USDT'];
+    });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+[2025-10-25 00:21:54] INVOICE_SHOW - Invalid invoice ID requested: 0
+[2025-10-25 00:25:58] INVOICE_SHOW - Invalid invoice ID requested: 0
+[2025-10-25 01:19:27] INVOICE_SHOW - User ID: 10 - Requesting invoice ID: 4
+[2025-10-25 01:19:27] INVOICE_SHOW - Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.aciklama' in 'field list'
+[2025-10-25 01:23:31] INVOICE_SHOW - User ID: 10
+[2025-10-25 01:23:31] INVOICE_SHOW - Requesting invoice ID: 4
+[2025-10-25 01:23:31] INVOICE_SHOW - Executing query: 
+        SELECT f.id as invoice_no, f.tutar as amount, f.tarih as date, f.durum as status,
+               p.baslik as package_name, p.aciklama as package_description,
+               f.odeme_yontemi as payment_method, f.son_odeme_tarihi as due_date
+        FROM k_faturalar f
+        LEFT JOIN k_paketler p ON f.paket_id = p.id
+        WHERE f.id = ? AND f.uid = ?
+        LIMIT 1
+    
+[2025-10-25 01:23:31] INVOICE_SHOW - Parameters: ID=4, UserID=10
+[2025-10-25 01:23:31] INVOICE_SHOW - Database error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND f.uid = ?
+        LIMIT 1' at line 6
+[2025-10-25 01:26:50] INVOICE_SHOW - User ID: 10
+[2025-10-25 01:26:50] INVOICE_SHOW - Requesting invoice ID: 4
+[2025-10-25 01:26:50] INVOICE_SHOW - Executing query: 
+        SELECT f.id as invoice_no, f.tutar as amount, f.tarih as date, f.durum as status,
+               p.baslik as package_name, p.aciklama as package_description,
+               f.odeme_yontemi as payment_method, f.son_odeme_tarihi as due_date
+        FROM k_faturalar f
+        LEFT JOIN k_paketler p ON f.paket_id = p.id
+        WHERE f.id = '4' AND f.uid = '10'
+        LIMIT 1
+    
+[2025-10-25 01:26:50] INVOICE_SHOW - Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.aciklama' in 'field list'
+[2025-10-25 01:30:21] INVOICE_SHOW - User ID: 10
+[2025-10-25 01:30:21] INVOICE_SHOW - Requesting invoice ID: 4
+[2025-10-25 01:30:21] INVOICE_SHOW - Checking table structure...
+[2025-10-25 01:30:21] INVOICE_SHOW - k_paketler columns: id, baslik, kota, sure, fiyat, durum
+[2025-10-25 01:30:21] INVOICE_SHOW - k_faturalar columns: id, uid, paket_id, tutar, tarih, durum
+[2025-10-25 01:30:21] INVOICE_SHOW - Final query: 
+        SELECT f.id as invoice_no, f.tutar as amount, f.tarih as date, f.durum as status, f.odeme_yontemi as payment_method, f.son_odeme_tarihi as due_date, p.baslik as package_name, NULL as package_description
+        FROM k_faturalar f
+        LEFT JOIN k_paketler p ON f.paket_id = p.id
+        WHERE f.id = '4' AND f.uid = '10'
+        LIMIT 1
+    
+[2025-10-25 01:30:21] INVOICE_SHOW - Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'f.odeme_yontemi' in 'field list'
+[2025-10-25 01:30:26] INVOICE_SHOW - User ID: 10
+[2025-10-25 01:30:26] INVOICE_SHOW - Requesting invoice ID: 4
+[2025-10-25 01:30:26] INVOICE_SHOW - Checking table structure...
+[2025-10-25 01:30:26] INVOICE_SHOW - k_paketler columns: id, baslik, kota, sure, fiyat, durum
+[2025-10-25 01:30:26] INVOICE_SHOW - k_faturalar columns: id, uid, paket_id, tutar, tarih, durum
+[2025-10-25 01:30:26] INVOICE_SHOW - Final query: 
+        SELECT f.id as invoice_no, f.tutar as amount, f.tarih as date, f.durum as status, f.odeme_yontemi as payment_method, f.son_odeme_tarihi as due_date, p.baslik as package_name, NULL as package_description
+        FROM k_faturalar f
+        LEFT JOIN k_paketler p ON f.paket_id = p.id
+        WHERE f.id = '4' AND f.uid = '10'
+        LIMIT 1
+    
+[2025-10-25 01:30:26] INVOICE_SHOW - Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'f.odeme_yontemi' in 'field list'

@@ -1,0 +1,131 @@
+[2025-10-28 23:00:59] === CREDIT SYSTEM ===
+[2025-10-28 23:00:59] User ID: 10
+[2025-10-28 23:00:59] Credit Column: kredi
+[2025-10-28 23:00:59] Current Credits: 2679
+[2025-10-28 23:00:59] Action requested: extend
+[2025-10-28 23:00:59] === EXTEND ACTION ===
+[2025-10-28 23:00:59] Items to extend: 2
+[2025-10-28 23:00:59] Days: 30
+[2025-10-28 23:00:59] Cost Per Link: 1
+[2025-10-28 23:00:59] Total Credits Needed: 2
+[2025-10-28 23:00:59] Current Credits: 2679
+[2025-10-28 23:00:59] Deduction result: SUCCESS
+[2025-10-28 23:00:59] Extended order 39029: 2025-11-02 -> 2025-12-02
+[2025-10-28 23:00:59] Extended order 39033: 2025-11-02 -> 2025-12-02
+[2025-10-28 23:00:59] New credit balance: 2677
+[2025-10-28 23:00:59] Successfully extended: 2 orders
+[2025-10-28 23:00:59] === PROCESS COMPLETED ===
+
+[2025-10-28 23:01:15] === CREDIT SYSTEM ===
+[2025-10-28 23:01:15] User ID: 10
+[2025-10-28 23:01:15] Credit Column: kredi
+[2025-10-28 23:01:15] Current Credits: 2677
+[2025-10-28 23:01:15] Action requested: extend
+[2025-10-28 23:01:15] === EXTEND ACTION ===
+[2025-10-28 23:01:15] Items to extend: 2
+[2025-10-28 23:01:15] Days: 30
+[2025-10-28 23:01:15] Cost Per Link: 1
+[2025-10-28 23:01:15] Total Credits Needed: 2
+[2025-10-28 23:01:15] Current Credits: 2677
+[2025-10-28 23:01:15] Deduction result: SUCCESS
+[2025-10-28 23:01:15] Extended order 39027: 2025-11-02 -> 2025-12-02
+[2025-10-28 23:01:15] Extended order 39028: 2025-11-02 -> 2025-12-02
+[2025-10-28 23:01:15] New credit balance: 2675
+[2025-10-28 23:01:15] Successfully extended: 2 orders
+[2025-10-28 23:01:15] === PROCESS COMPLETED ===
+
+[2025-10-28 23:56:47] === CREDIT SYSTEM ===
+[2025-10-28 23:56:47] User ID: 10
+[2025-10-28 23:56:47] Credit Column: kredi
+[2025-10-28 23:56:47] Current Credits: 2669
+[2025-10-28 23:56:47] Action requested: extend
+[2025-10-28 23:56:47] === EXTEND ACTION ===
+[2025-10-28 23:56:47] Items to extend: 1
+[2025-10-28 23:56:47] Days: 30
+[2025-10-28 23:56:47] Cost Per Link: 1
+[2025-10-28 23:56:47] Total Credits Needed: 1
+[2025-10-28 23:56:47] Current Credits: 2669
+[2025-10-28 23:56:47] Deduction result: SUCCESS
+[2025-10-28 23:56:47] Extended order 39041: 2025-11-27 -> 2025-12-27
+[2025-10-28 23:56:47] New credit balance: 2668
+[2025-10-28 23:56:47] Successfully extended: 1 orders
+[2025-10-28 23:56:47] === PROCESS COMPLETED ===
+
+[2025-10-28 23:57:06] === CREDIT SYSTEM ===
+[2025-10-28 23:57:06] User ID: 10
+[2025-10-28 23:57:06] Credit Column: kredi
+[2025-10-28 23:57:06] Current Credits: 2668
+[2025-10-28 23:57:06] Action requested: extend
+[2025-10-28 23:57:06] === EXTEND ACTION ===
+[2025-10-28 23:57:06] Items to extend: 1
+[2025-10-28 23:57:06] Days: 30
+[2025-10-28 23:57:06] Cost Per Link: 1
+[2025-10-28 23:57:06] Total Credits Needed: 1
+[2025-10-28 23:57:06] Current Credits: 2668
+[2025-10-28 23:57:06] Deduction result: SUCCESS
+[2025-10-28 23:57:06] Extended order 39041: 2025-12-27 -> 2026-01-26
+[2025-10-28 23:57:06] New credit balance: 2667
+[2025-10-28 23:57:06] Successfully extended: 1 orders
+[2025-10-28 23:57:06] === PROCESS COMPLETED ===
+
+[2025-10-28 23:58:37] === CREDIT SYSTEM ===
+[2025-10-28 23:58:37] User ID: 10
+[2025-10-28 23:58:37] Credit Column: kredi
+[2025-10-28 23:58:37] Current Credits: 2667
+[2025-10-28 23:58:37] Action requested: toggle_renew
+[2025-10-28 23:58:38] === CREDIT SYSTEM ===
+[2025-10-28 23:58:38] User ID: 10
+[2025-10-28 23:58:38] Credit Column: kredi
+[2025-10-28 23:58:38] Current Credits: 2667
+[2025-10-28 23:58:38] Action requested: toggle_renew
+[2025-10-29 00:04:59] === CREDIT SYSTEM ===
+[2025-10-29 00:04:59] User ID: 10
+[2025-10-29 00:04:59] Credit Column: kredi
+[2025-10-29 00:04:59] Current Credits: 2667
+[2025-10-29 00:04:59] Action requested: extend
+[2025-10-29 00:04:59] === EXTEND ACTION ===
+[2025-10-29 00:04:59] Items to extend: 1
+[2025-10-29 00:04:59] Days: 30
+[2025-10-29 00:04:59] Cost Per Link: 1
+[2025-10-29 00:04:59] Total Credits Needed: 1
+[2025-10-29 00:04:59] Current Credits: 2667
+[2025-10-29 00:04:59] Deduction result: SUCCESS
+[2025-10-29 00:04:59] Extended order 39041: 2026-01-26 -> 2025-11-28
+[2025-10-29 00:04:59] New credit balance: 2666
+[2025-10-29 00:04:59] Successfully extended: 1 orders
+[2025-10-29 00:04:59] === PROCESS COMPLETED ===
+
+[2025-10-29 00:05:08] === CREDIT SYSTEM ===
+[2025-10-29 00:05:08] User ID: 10
+[2025-10-29 00:05:08] Credit Column: kredi
+[2025-10-29 00:05:08] Current Credits: 2666
+[2025-10-29 00:05:08] Action requested: extend
+[2025-10-29 00:05:08] === EXTEND ACTION ===
+[2025-10-29 00:05:08] Items to extend: 1
+[2025-10-29 00:05:08] Days: 30
+[2025-10-29 00:05:08] Cost Per Link: 1
+[2025-10-29 00:05:08] Total Credits Needed: 1
+[2025-10-29 00:05:08] Current Credits: 2666
+[2025-10-29 00:05:08] Deduction result: SUCCESS
+[2025-10-29 00:05:08] Extended order 39041: 2025-11-28 -> 2025-12-28
+[2025-10-29 00:05:08] New credit balance: 2665
+[2025-10-29 00:05:08] Successfully extended: 1 orders
+[2025-10-29 00:05:08] === PROCESS COMPLETED ===
+
+[2025-10-29 00:05:32] === CREDIT SYSTEM ===
+[2025-10-29 00:05:32] User ID: 10
+[2025-10-29 00:05:32] Credit Column: kredi
+[2025-10-29 00:05:32] Current Credits: 2665
+[2025-10-29 00:05:32] Action requested: extend
+[2025-10-29 00:05:32] === EXTEND ACTION ===
+[2025-10-29 00:05:32] Items to extend: 1
+[2025-10-29 00:05:32] Days: 30
+[2025-10-29 00:05:32] Cost Per Link: 1
+[2025-10-29 00:05:32] Total Credits Needed: 1
+[2025-10-29 00:05:32] Current Credits: 2665
+[2025-10-29 00:05:32] Deduction result: SUCCESS
+[2025-10-29 00:05:32] Extended order 39041: 2025-12-28 -> 2026-01-27
+[2025-10-29 00:05:32] New credit balance: 2664
+[2025-10-29 00:05:32] Successfully extended: 1 orders
+[2025-10-29 00:05:32] === PROCESS COMPLETED ===
+

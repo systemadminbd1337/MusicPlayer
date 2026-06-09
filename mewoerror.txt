@@ -1,0 +1,1603 @@
+[2025-10-26 17:59:26] Updated k_orders with data from k_link_placements
+[2025-10-26 17:59:26] k_link_placements table ensured
+[2025-10-26 17:59:26] User credit fetched: uid=10, credit=2746
+[2025-10-26 17:59:26] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 17:59:26] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 17:59:26] Purchased links for uid=10: 49
+[2025-10-26 17:59:28] Updated k_orders with data from k_link_placements
+[2025-10-26 17:59:28] k_link_placements table ensured
+[2025-10-26 17:59:28] User credit fetched: uid=10, credit=2746
+[2025-10-26 17:59:28] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 17:59:28] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 17:59:28] Purchased links for uid=10: 49
+[2025-10-26 17:59:28] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 17:59:28] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 17:59:28] Updated k_orders with data from k_link_placements
+[2025-10-26 17:59:28] k_link_placements table ensured
+[2025-10-26 17:59:28] User credit fetched: uid=10, credit=2746
+[2025-10-26 17:59:28] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 17:59:29] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 17:59:29] Purchased links for uid=10: 49
+[2025-10-26 17:59:44] Updated k_orders with data from k_link_placements
+[2025-10-26 17:59:44] k_link_placements table ensured
+[2025-10-26 17:59:44] User credit fetched: uid=10, credit=2746
+[2025-10-26 17:59:44] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 17:59:44] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 17:59:44] Purchased links for uid=10: 49
+[2025-10-26 17:59:44] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 17:59:44] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 17:59:57] Updated k_orders with data from k_link_placements
+[2025-10-26 17:59:57] k_link_placements table ensured
+[2025-10-26 17:59:57] User credit fetched: uid=10, credit=2746
+[2025-10-26 17:59:57] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 17:59:57] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 17:59:57] Purchased links for uid=10: 49
+[2025-10-26 17:59:57] === BULK BUY STARTED ===
+[2025-10-26 17:59:57] Bulk buy attempt: ids=[1961,2362], site_address=systemadminbd.com/botnet, keyword='systemadminbd', duration=60d
+[2025-10-26 17:59:57] Inserting into k_orders: uid=10, lid=1961, target_url='systemadminbd.com/botnet', keyword='systemadminbd'
+[2025-10-26 17:59:57] === AUTO_PLACE_LINK STARTED ===
+[2025-10-26 17:59:57] Parameters - lid: 1961, domain: voiledusud.com, target_url: systemadminbd.com/botnet, keyword: 'systemadminbd', receiver_id: 1
+[2025-10-26 17:59:57] Using user provided keyword: 'systemadminbd'
+[2025-10-26 17:59:57] Fixed target_url: https://systemadminbd.com/botnet
+[2025-10-26 17:59:57] Receiver URL: https://hack-link.com/api/receiver.php
+[2025-10-26 17:59:57] Updated k_orders with target_url: 'https://systemadminbd.com/botnet' and keyword: 'systemadminbd'
+[2025-10-26 17:59:57] Inserted placement log: pid=1
+[2025-10-26 17:59:57] Sending payload to receiver: {"secret":"my_secret_key_12345","operation":"place_link","domain":"voiledusud.com","target_url":"https:\/\/systemadminbd.com\/botnet","keyword":"systemadminbd"}
+[2025-10-26 17:59:57] API response: {"ok":1,"msg":"Backlink published","page":"https:\/\/hack-link.com\/backlinks\/voiledusud.com\/","entries":1}
+[2025-10-26 17:59:57] === AUTO_PLACE_LINK COMPLETED - Status: success ===
+[2025-10-26 17:59:57] Purchased bulk link: lid=1961, cost=3, remaining balance=2743
+[2025-10-26 17:59:57] Inserting into k_orders: uid=10, lid=2362, target_url='systemadminbd.com/botnet', keyword='systemadminbd'
+[2025-10-26 17:59:57] === AUTO_PLACE_LINK STARTED ===
+[2025-10-26 17:59:57] Parameters - lid: 2362, domain: vnu.volyn.ua, target_url: systemadminbd.com/botnet, keyword: 'systemadminbd', receiver_id: 1
+[2025-10-26 17:59:57] Using user provided keyword: 'systemadminbd'
+[2025-10-26 17:59:57] Fixed target_url: https://systemadminbd.com/botnet
+[2025-10-26 17:59:57] Receiver URL: https://hack-link.com/api/receiver.php
+[2025-10-26 17:59:57] Updated k_orders with target_url: 'https://systemadminbd.com/botnet' and keyword: 'systemadminbd'
+[2025-10-26 17:59:57] Inserted placement log: pid=2
+[2025-10-26 17:59:57] Sending payload to receiver: {"secret":"my_secret_key_12345","operation":"place_link","domain":"vnu.volyn.ua","target_url":"https:\/\/systemadminbd.com\/botnet","keyword":"systemadminbd"}
+[2025-10-26 17:59:57] API response: {"ok":1,"msg":"Backlink published","page":"https:\/\/hack-link.com\/backlinks\/vnu.volyn.ua\/","entries":1}
+[2025-10-26 17:59:57] === AUTO_PLACE_LINK COMPLETED - Status: success ===
+[2025-10-26 17:59:57] Purchased bulk link: lid=2362, cost=3, remaining balance=2740
+[2025-10-26 17:59:57] === BULK BUY COMPLETED ===
+[2025-10-26 17:59:58] Updated k_orders with data from k_link_placements
+[2025-10-26 17:59:58] k_link_placements table ensured
+[2025-10-26 17:59:58] User credit fetched: uid=10, credit=2740
+[2025-10-26 17:59:58] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 17:59:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 17:59:58] Purchased links for uid=10: 51
+[2025-10-26 17:59:58] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 17:59:58] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 18:41:11] Updated k_orders with data from k_link_placements
+[2025-10-26 18:41:11] k_link_placements table ensured
+[2025-10-26 18:41:11] User credit fetched: uid=10, credit=2737
+[2025-10-26 18:41:11] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:41:11] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:41:11] Purchased links for uid=10: 51
+[2025-10-26 18:41:13] Updated k_orders with data from k_link_placements
+[2025-10-26 18:41:13] k_link_placements table ensured
+[2025-10-26 18:41:13] User credit fetched: uid=10, credit=2737
+[2025-10-26 18:41:13] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:41:13] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:41:13] Purchased links for uid=10: 51
+[2025-10-26 18:41:13] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 18:41:13] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 18:41:13] Updated k_orders with data from k_link_placements
+[2025-10-26 18:41:13] k_link_placements table ensured
+[2025-10-26 18:41:13] User credit fetched: uid=10, credit=2737
+[2025-10-26 18:41:13] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:41:13] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:41:13] Purchased links for uid=10: 51
+[2025-10-26 18:41:28] Updated k_orders with data from k_link_placements
+[2025-10-26 18:41:28] k_link_placements table ensured
+[2025-10-26 18:41:28] User credit fetched: uid=10, credit=2737
+[2025-10-26 18:41:28] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:41:28] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:41:28] Purchased links for uid=10: 51
+[2025-10-26 18:41:28] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 18:41:28] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 18:41:41] Updated k_orders with data from k_link_placements
+[2025-10-26 18:41:41] k_link_placements table ensured
+[2025-10-26 18:41:41] User credit fetched: uid=10, credit=2737
+[2025-10-26 18:41:41] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:41:41] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:41:41] Purchased links for uid=10: 51
+[2025-10-26 18:41:41] === BULK BUY STARTED ===
+[2025-10-26 18:41:41] Bulk buy attempt: ids=[2200,2044], site_address=systemadminbd.com/botnet, keyword='beeeeeeesooooo', duration=30d
+[2025-10-26 18:41:41] Inserting into k_orders: uid=10, lid=2200, target_url='systemadminbd.com/botnet', keyword='beeeeeeesooooo'
+[2025-10-26 18:41:41] === AUTO_PLACE_LINK STARTED ===
+[2025-10-26 18:41:41] Parameters - lid: 2200, domain: sorteos.ceux.edu.mx, target_url: systemadminbd.com/botnet, keyword: 'beeeeeeesooooo', receiver_id: 1
+[2025-10-26 18:41:41] Using user provided keyword: 'beeeeeeesooooo'
+[2025-10-26 18:41:41] Fixed target_url: https://systemadminbd.com/botnet
+[2025-10-26 18:41:41] Receiver URL: https://hack-link.com/api/receiver.php
+[2025-10-26 18:41:41] Updated k_orders with target_url: 'https://systemadminbd.com/botnet' and keyword: 'beeeeeeesooooo'
+[2025-10-26 18:41:41] Inserted placement log: pid=3
+[2025-10-26 18:41:41] Sending payload to receiver: {"secret":"my_secret_key_12345","operation":"place_link","domain":"sorteos.ceux.edu.mx","target_url":"https:\/\/systemadminbd.com\/botnet","keyword":"beeeeeeesooooo"}
+[2025-10-26 18:41:42] API response: {"ok":1,"msg":"Backlink published","page":"https:\/\/hack-link.com\/backlinks\/sorteos.ceux.edu.mx\/","entries":1}
+[2025-10-26 18:41:42] === AUTO_PLACE_LINK COMPLETED - Status: success ===
+[2025-10-26 18:41:42] Purchased bulk link: lid=2200, cost=2, remaining balance=2735
+[2025-10-26 18:41:42] Inserting into k_orders: uid=10, lid=2044, target_url='systemadminbd.com/botnet', keyword='beeeeeeesooooo'
+[2025-10-26 18:41:42] === AUTO_PLACE_LINK STARTED ===
+[2025-10-26 18:41:42] Parameters - lid: 2044, domain: sonepurcollege.org.in, target_url: systemadminbd.com/botnet, keyword: 'beeeeeeesooooo', receiver_id: 1
+[2025-10-26 18:41:42] Using user provided keyword: 'beeeeeeesooooo'
+[2025-10-26 18:41:42] Fixed target_url: https://systemadminbd.com/botnet
+[2025-10-26 18:41:42] Receiver URL: https://hack-link.com/api/receiver.php
+[2025-10-26 18:41:42] Updated k_orders with target_url: 'https://systemadminbd.com/botnet' and keyword: 'beeeeeeesooooo'
+[2025-10-26 18:41:42] Inserted placement log: pid=4
+[2025-10-26 18:41:42] Sending payload to receiver: {"secret":"my_secret_key_12345","operation":"place_link","domain":"sonepurcollege.org.in","target_url":"https:\/\/systemadminbd.com\/botnet","keyword":"beeeeeeesooooo"}
+[2025-10-26 18:41:42] API response: {"ok":1,"msg":"Backlink published","page":"https:\/\/hack-link.com\/backlinks\/sonepurcollege.org.in\/","entries":1}
+[2025-10-26 18:41:42] === AUTO_PLACE_LINK COMPLETED - Status: success ===
+[2025-10-26 18:41:42] Purchased bulk link: lid=2044, cost=2, remaining balance=2733
+[2025-10-26 18:41:42] === BULK BUY COMPLETED ===
+[2025-10-26 18:41:43] Updated k_orders with data from k_link_placements
+[2025-10-26 18:41:43] k_link_placements table ensured
+[2025-10-26 18:41:43] User credit fetched: uid=10, credit=2733
+[2025-10-26 18:41:43] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:41:43] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:41:43] Purchased links for uid=10: 53
+[2025-10-26 18:41:43] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 18:41:43] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 18:43:17] Updated k_orders with data from k_link_placements
+[2025-10-26 18:43:17] k_link_placements table ensured
+[2025-10-26 18:43:17] User credit fetched: uid=29, credit=0
+[2025-10-26 18:43:17] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:43:17] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:43:19] Updated k_orders with data from k_link_placements
+[2025-10-26 18:43:19] k_link_placements table ensured
+[2025-10-26 18:43:19] User credit fetched: uid=29, credit=0
+[2025-10-26 18:43:19] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:43:19] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:43:19] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 18:43:19] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 18:43:19] Updated k_orders with data from k_link_placements
+[2025-10-26 18:43:19] k_link_placements table ensured
+[2025-10-26 18:43:19] User credit fetched: uid=29, credit=0
+[2025-10-26 18:43:19] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:43:19] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:43:34] Updated k_orders with data from k_link_placements
+[2025-10-26 18:43:34] k_link_placements table ensured
+[2025-10-26 18:43:34] User credit fetched: uid=29, credit=0
+[2025-10-26 18:43:34] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:43:34] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:43:34] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 18:43:34] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 18:43:36] Updated k_orders with data from k_link_placements
+[2025-10-26 18:43:36] k_link_placements table ensured
+[2025-10-26 18:43:36] User credit fetched: uid=29, credit=0
+[2025-10-26 18:43:36] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 18:43:36] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 18:43:36] === BULK BUY STARTED ===
+[2025-10-26 18:43:36] Bulk buy attempt: ids=[1923,2296], site_address=systemadminbd, keyword='mawwwwwwwwwwww', duration=30d
+[2025-10-26 19:59:14] Updated k_orders with data from k_link_placements
+[2025-10-26 19:59:14] k_link_placements table ensured
+[2025-10-26 19:59:14] User credit fetched: uid=11, credit=1303
+[2025-10-26 19:59:14] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 19:59:14] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 19:59:15] Updated k_orders with data from k_link_placements
+[2025-10-26 19:59:15] k_link_placements table ensured
+[2025-10-26 19:59:15] User credit fetched: uid=11, credit=1303
+[2025-10-26 19:59:15] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 19:59:15] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 19:59:15] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 19:59:15] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 19:59:15] Updated k_orders with data from k_link_placements
+[2025-10-26 19:59:15] k_link_placements table ensured
+[2025-10-26 19:59:15] User credit fetched: uid=11, credit=1303
+[2025-10-26 19:59:15] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 19:59:15] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 19:59:30] Updated k_orders with data from k_link_placements
+[2025-10-26 19:59:30] k_link_placements table ensured
+[2025-10-26 19:59:30] User credit fetched: uid=11, credit=1303
+[2025-10-26 19:59:30] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 19:59:30] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 19:59:30] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 19:59:30] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 19:59:31] Updated k_orders with data from k_link_placements
+[2025-10-26 19:59:31] k_link_placements table ensured
+[2025-10-26 19:59:31] User credit fetched: uid=11, credit=1303
+[2025-10-26 19:59:31] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 19:59:31] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 19:59:31] === SINGLE BUY STARTED ===
+[2025-10-26 19:59:31] Single buy attempt: lid=2057, target_url=https://www.googleseo.co/, keyword='토토사이트', duration=30d
+[2025-10-26 19:59:31] Inserting into k_orders: uid=11, lid=2057, target_url='https://www.googleseo.co/', keyword='토토사이트'
+[2025-10-26 19:59:31] === AUTO_PLACE_LINK STARTED ===
+[2025-10-26 19:59:31] Parameters - lid: 2057, domain: zukunft.akbk-horrem.de, target_url: https://www.googleseo.co/, keyword: '토토사이트', receiver_id: 1
+[2025-10-26 19:59:31] Using user provided keyword: '토토사이트'
+[2025-10-26 19:59:31] Receiver URL: https://hack-link.com/api/receiver.php
+[2025-10-26 19:59:31] Updated k_orders with target_url: 'https://www.googleseo.co/' and keyword: '토토사이트'
+[2025-10-26 19:59:31] Inserted placement log: pid=5
+[2025-10-26 19:59:31] Sending payload to receiver: {"secret":"my_secret_key_12345","operation":"place_link","domain":"zukunft.akbk-horrem.de","target_url":"https:\/\/www.googleseo.co\/","keyword":"\ud1a0\ud1a0\uc0ac\uc774\ud2b8"}
+[2025-10-26 19:59:31] API response: {"ok":1,"msg":"Backlink published","page":"https:\/\/hack-link.com\/backlinks\/zukunft.akbk-horrem.de\/","entries":1}
+[2025-10-26 19:59:31] === AUTO_PLACE_LINK COMPLETED - Status: success ===
+[2025-10-26 19:59:31] === SINGLE BUY COMPLETED ===
+[2025-10-26 19:59:57] Updated k_orders with data from k_link_placements
+[2025-10-26 19:59:57] k_link_placements table ensured
+[2025-10-26 19:59:57] User credit fetched: uid=11, credit=1301
+[2025-10-26 19:59:57] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 19:59:57] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 19:59:57] Purchased links for uid=11: 1
+[2025-10-26 19:59:58] Updated k_orders with data from k_link_placements
+[2025-10-26 19:59:58] k_link_placements table ensured
+[2025-10-26 19:59:58] User credit fetched: uid=11, credit=1301
+[2025-10-26 19:59:58] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 19:59:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 19:59:58] Purchased links for uid=11: 1
+[2025-10-26 19:59:58] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 19:59:58] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 19:59:59] Updated k_orders with data from k_link_placements
+[2025-10-26 19:59:59] k_link_placements table ensured
+[2025-10-26 19:59:59] User credit fetched: uid=11, credit=1301
+[2025-10-26 19:59:59] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 19:59:59] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 19:59:59] Purchased links for uid=11: 1
+[2025-10-26 20:00:14] Updated k_orders with data from k_link_placements
+[2025-10-26 20:00:14] k_link_placements table ensured
+[2025-10-26 20:00:14] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:00:14] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:00:14] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:00:14] Purchased links for uid=11: 1
+[2025-10-26 20:00:14] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:00:14] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:00:29] Updated k_orders with data from k_link_placements
+[2025-10-26 20:00:29] k_link_placements table ensured
+[2025-10-26 20:00:29] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:00:29] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:00:29] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:00:29] Purchased links for uid=11: 1
+[2025-10-26 20:00:29] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:00:29] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:00:45] Updated k_orders with data from k_link_placements
+[2025-10-26 20:00:45] k_link_placements table ensured
+[2025-10-26 20:00:45] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:00:45] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:00:45] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:00:45] Purchased links for uid=11: 1
+[2025-10-26 20:00:45] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:00:45] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:01:00] Updated k_orders with data from k_link_placements
+[2025-10-26 20:01:00] k_link_placements table ensured
+[2025-10-26 20:01:00] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:01:00] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:01:00] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:01:00] Purchased links for uid=11: 1
+[2025-10-26 20:01:00] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:01:00] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:01:28] Updated k_orders with data from k_link_placements
+[2025-10-26 20:01:28] k_link_placements table ensured
+[2025-10-26 20:01:28] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:01:28] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:01:28] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:01:28] Purchased links for uid=11: 1
+[2025-10-26 20:01:29] Updated k_orders with data from k_link_placements
+[2025-10-26 20:01:29] k_link_placements table ensured
+[2025-10-26 20:01:29] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:01:29] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:01:29] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:01:29] Purchased links for uid=11: 1
+[2025-10-26 20:01:29] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:01:29] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:01:29] Updated k_orders with data from k_link_placements
+[2025-10-26 20:01:29] k_link_placements table ensured
+[2025-10-26 20:01:29] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:01:29] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:01:29] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:01:29] Purchased links for uid=11: 1
+[2025-10-26 20:01:45] Updated k_orders with data from k_link_placements
+[2025-10-26 20:01:45] k_link_placements table ensured
+[2025-10-26 20:01:45] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:01:45] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:01:45] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:01:45] Purchased links for uid=11: 1
+[2025-10-26 20:01:45] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:01:45] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:02:01] Updated k_orders with data from k_link_placements
+[2025-10-26 20:02:01] k_link_placements table ensured
+[2025-10-26 20:02:01] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:02:01] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:02:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:02:01] Purchased links for uid=11: 1
+[2025-10-26 20:02:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:02:01] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:02:17] Updated k_orders with data from k_link_placements
+[2025-10-26 20:02:17] k_link_placements table ensured
+[2025-10-26 20:02:17] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:02:17] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:02:17] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:02:17] Purchased links for uid=11: 1
+[2025-10-26 20:02:17] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:02:17] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:02:33] Updated k_orders with data from k_link_placements
+[2025-10-26 20:02:33] k_link_placements table ensured
+[2025-10-26 20:02:33] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:02:33] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:02:33] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:02:33] Purchased links for uid=11: 1
+[2025-10-26 20:02:33] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:02:33] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:03:07] Updated k_orders with data from k_link_placements
+[2025-10-26 20:03:07] k_link_placements table ensured
+[2025-10-26 20:03:07] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:03:07] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:03:07] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:03:07] Purchased links for uid=11: 1
+[2025-10-26 20:03:07] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:03:07] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:04:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:04:03] k_link_placements table ensured
+[2025-10-26 20:04:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:04:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:04:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:04:03] Purchased links for uid=11: 1
+[2025-10-26 20:04:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:04:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:05:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:05:03] k_link_placements table ensured
+[2025-10-26 20:05:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:05:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:05:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:05:03] Purchased links for uid=11: 1
+[2025-10-26 20:05:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:05:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:06:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:06:03] k_link_placements table ensured
+[2025-10-26 20:06:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:06:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:06:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:06:03] Purchased links for uid=11: 1
+[2025-10-26 20:06:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:06:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:06:31] Updated k_orders with data from k_link_placements
+[2025-10-26 20:06:31] k_link_placements table ensured
+[2025-10-26 20:06:31] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:06:31] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:06:31] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:06:31] Purchased links for uid=11: 1
+[2025-10-26 20:06:31] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:06:31] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:06:46] Updated k_orders with data from k_link_placements
+[2025-10-26 20:06:46] k_link_placements table ensured
+[2025-10-26 20:06:46] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:06:46] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:06:46] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:06:46] Purchased links for uid=11: 1
+[2025-10-26 20:06:46] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:06:46] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:07:02] Updated k_orders with data from k_link_placements
+[2025-10-26 20:07:02] k_link_placements table ensured
+[2025-10-26 20:07:02] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:07:02] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:07:02] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:07:02] Purchased links for uid=11: 1
+[2025-10-26 20:07:02] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:07:02] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:07:18] Updated k_orders with data from k_link_placements
+[2025-10-26 20:07:18] k_link_placements table ensured
+[2025-10-26 20:07:18] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:07:18] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:07:18] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:07:18] Purchased links for uid=11: 1
+[2025-10-26 20:07:18] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:07:18] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:07:34] Updated k_orders with data from k_link_placements
+[2025-10-26 20:07:34] k_link_placements table ensured
+[2025-10-26 20:07:34] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:07:34] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:07:34] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:07:34] Purchased links for uid=11: 1
+[2025-10-26 20:07:34] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:07:34] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:08:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:08:03] k_link_placements table ensured
+[2025-10-26 20:08:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:08:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:08:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:08:03] Purchased links for uid=11: 1
+[2025-10-26 20:08:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:08:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:09:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:09:03] k_link_placements table ensured
+[2025-10-26 20:09:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:09:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:09:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:09:03] Purchased links for uid=11: 1
+[2025-10-26 20:09:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:09:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:10:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:10:03] k_link_placements table ensured
+[2025-10-26 20:10:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:10:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:10:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:10:03] Purchased links for uid=11: 1
+[2025-10-26 20:10:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:10:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:11:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:11:03] k_link_placements table ensured
+[2025-10-26 20:11:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:11:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:11:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:11:03] Purchased links for uid=11: 1
+[2025-10-26 20:11:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:11:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:12:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:12:03] k_link_placements table ensured
+[2025-10-26 20:12:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:12:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:12:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:12:03] Purchased links for uid=11: 1
+[2025-10-26 20:12:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:12:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:12:21] Updated k_orders with data from k_link_placements
+[2025-10-26 20:12:21] k_link_placements table ensured
+[2025-10-26 20:12:21] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:12:21] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:12:21] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:12:21] Purchased links for uid=10: 53
+[2025-10-26 20:12:23] Updated k_orders with data from k_link_placements
+[2025-10-26 20:12:23] k_link_placements table ensured
+[2025-10-26 20:12:23] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:12:23] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:12:23] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:12:23] Purchased links for uid=10: 53
+[2025-10-26 20:12:23] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:12:23] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:12:23] Updated k_orders with data from k_link_placements
+[2025-10-26 20:12:23] k_link_placements table ensured
+[2025-10-26 20:12:23] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:12:23] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:12:23] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:12:23] Purchased links for uid=10: 53
+[2025-10-26 20:12:39] Updated k_orders with data from k_link_placements
+[2025-10-26 20:12:39] k_link_placements table ensured
+[2025-10-26 20:12:39] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:12:39] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:12:39] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:12:39] Purchased links for uid=10: 53
+[2025-10-26 20:12:39] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:12:39] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:12:54] Updated k_orders with data from k_link_placements
+[2025-10-26 20:12:54] k_link_placements table ensured
+[2025-10-26 20:12:54] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:12:54] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:12:55] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:12:55] Purchased links for uid=10: 53
+[2025-10-26 20:12:55] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:12:55] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:13:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:13:03] k_link_placements table ensured
+[2025-10-26 20:13:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:13:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:13:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:13:03] Purchased links for uid=11: 1
+[2025-10-26 20:13:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:13:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:13:10] Updated k_orders with data from k_link_placements
+[2025-10-26 20:13:10] k_link_placements table ensured
+[2025-10-26 20:13:10] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:13:11] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:13:11] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:13:11] Purchased links for uid=10: 53
+[2025-10-26 20:13:11] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:13:11] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:13:26] Updated k_orders with data from k_link_placements
+[2025-10-26 20:13:26] k_link_placements table ensured
+[2025-10-26 20:13:26] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:13:26] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:13:26] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:13:26] Purchased links for uid=10: 53
+[2025-10-26 20:13:26] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:13:26] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:13:42] Updated k_orders with data from k_link_placements
+[2025-10-26 20:13:42] k_link_placements table ensured
+[2025-10-26 20:13:42] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:13:42] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:13:42] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:13:42] Purchased links for uid=10: 53
+[2025-10-26 20:13:42] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:13:42] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:13:58] Updated k_orders with data from k_link_placements
+[2025-10-26 20:13:58] k_link_placements table ensured
+[2025-10-26 20:13:58] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:13:58] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:13:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:13:58] Purchased links for uid=10: 53
+[2025-10-26 20:13:58] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:13:58] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:14:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:14:03] k_link_placements table ensured
+[2025-10-26 20:14:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:14:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:14:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:14:03] Purchased links for uid=11: 1
+[2025-10-26 20:14:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:14:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:14:13] Updated k_orders with data from k_link_placements
+[2025-10-26 20:14:13] k_link_placements table ensured
+[2025-10-26 20:14:13] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:14:13] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:14:13] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:14:13] Purchased links for uid=10: 53
+[2025-10-26 20:14:13] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:14:13] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:15:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:15:03] k_link_placements table ensured
+[2025-10-26 20:15:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:15:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:15:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:15:03] Purchased links for uid=11: 1
+[2025-10-26 20:15:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:15:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:15:08] Updated k_orders with data from k_link_placements
+[2025-10-26 20:15:08] k_link_placements table ensured
+[2025-10-26 20:15:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:15:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:15:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:15:08] Purchased links for uid=10: 53
+[2025-10-26 20:15:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:15:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:16:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:16:03] k_link_placements table ensured
+[2025-10-26 20:16:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:16:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:16:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:16:03] Purchased links for uid=11: 1
+[2025-10-26 20:16:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:16:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:16:08] Updated k_orders with data from k_link_placements
+[2025-10-26 20:16:08] k_link_placements table ensured
+[2025-10-26 20:16:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:16:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:16:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:16:08] Purchased links for uid=10: 53
+[2025-10-26 20:16:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:16:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:16:35] Updated k_orders with data from k_link_placements
+[2025-10-26 20:16:35] k_link_placements table ensured
+[2025-10-26 20:16:35] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:16:35] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:16:35] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:16:35] Purchased links for uid=10: 53
+[2025-10-26 20:16:35] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:16:35] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:17:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:17:03] k_link_placements table ensured
+[2025-10-26 20:17:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:17:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:17:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:17:03] Purchased links for uid=11: 1
+[2025-10-26 20:17:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:17:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:17:56] Updated k_orders with data from k_link_placements
+[2025-10-26 20:17:56] k_link_placements table ensured
+[2025-10-26 20:17:56] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:17:56] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:17:56] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:17:56] Purchased links for uid=10: 53
+[2025-10-26 20:17:58] Updated k_orders with data from k_link_placements
+[2025-10-26 20:17:58] k_link_placements table ensured
+[2025-10-26 20:17:58] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:17:58] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:17:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:17:58] Purchased links for uid=10: 53
+[2025-10-26 20:17:58] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:17:58] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:17:58] Updated k_orders with data from k_link_placements
+[2025-10-26 20:17:58] k_link_placements table ensured
+[2025-10-26 20:17:58] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:17:58] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:17:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:17:58] Purchased links for uid=10: 53
+[2025-10-26 20:18:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:18:03] k_link_placements table ensured
+[2025-10-26 20:18:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:18:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:18:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:18:03] Purchased links for uid=11: 1
+[2025-10-26 20:18:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:18:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:18:13] Updated k_orders with data from k_link_placements
+[2025-10-26 20:18:13] k_link_placements table ensured
+[2025-10-26 20:18:13] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:18:13] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:18:13] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:18:13] Purchased links for uid=10: 53
+[2025-10-26 20:18:13] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:18:13] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:18:28] Updated k_orders with data from k_link_placements
+[2025-10-26 20:18:28] k_link_placements table ensured
+[2025-10-26 20:18:28] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:18:28] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:18:28] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:18:28] Purchased links for uid=10: 53
+[2025-10-26 20:18:28] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:18:28] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:18:44] Updated k_orders with data from k_link_placements
+[2025-10-26 20:18:44] k_link_placements table ensured
+[2025-10-26 20:18:44] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:18:44] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:18:44] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:18:44] Purchased links for uid=10: 53
+[2025-10-26 20:18:44] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:18:44] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:19:00] Updated k_orders with data from k_link_placements
+[2025-10-26 20:19:00] k_link_placements table ensured
+[2025-10-26 20:19:00] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:19:00] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:19:00] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:19:00] Purchased links for uid=10: 53
+[2025-10-26 20:19:00] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:19:00] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:19:03] Updated k_orders with data from k_link_placements
+[2025-10-26 20:19:03] k_link_placements table ensured
+[2025-10-26 20:19:03] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:19:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:19:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:19:03] Purchased links for uid=11: 1
+[2025-10-26 20:19:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:19:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:19:16] Updated k_orders with data from k_link_placements
+[2025-10-26 20:19:16] k_link_placements table ensured
+[2025-10-26 20:19:16] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:19:16] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:19:16] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:19:16] Purchased links for uid=10: 53
+[2025-10-26 20:19:16] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:19:16] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:19:31] Updated k_orders with data from k_link_placements
+[2025-10-26 20:19:31] k_link_placements table ensured
+[2025-10-26 20:19:31] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:19:31] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:19:31] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:19:31] Purchased links for uid=10: 53
+[2025-10-26 20:19:31] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:19:31] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:19:31] Updated k_orders with data from k_link_placements
+[2025-10-26 20:19:31] k_link_placements table ensured
+[2025-10-26 20:19:31] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:19:31] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:19:31] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:19:31] Purchased links for uid=10: 53
+[2025-10-26 20:19:33] Updated k_orders with data from k_link_placements
+[2025-10-26 20:19:33] k_link_placements table ensured
+[2025-10-26 20:19:33] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:19:33] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:19:33] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:19:33] Purchased links for uid=10: 53
+[2025-10-26 20:19:33] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:19:33] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:19:34] Updated k_orders with data from k_link_placements
+[2025-10-26 20:19:34] k_link_placements table ensured
+[2025-10-26 20:19:34] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:19:34] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:19:34] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:19:34] Purchased links for uid=10: 53
+[2025-10-26 20:19:49] Updated k_orders with data from k_link_placements
+[2025-10-26 20:19:49] k_link_placements table ensured
+[2025-10-26 20:19:49] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:19:49] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:19:49] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:19:49] Purchased links for uid=10: 53
+[2025-10-26 20:19:49] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:19:49] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:20:04] Updated k_orders with data from k_link_placements
+[2025-10-26 20:20:04] k_link_placements table ensured
+[2025-10-26 20:20:04] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:20:04] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:20:04] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:20:04] Purchased links for uid=10: 53
+[2025-10-26 20:20:04] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:20:04] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:20:05] Updated k_orders with data from k_link_placements
+[2025-10-26 20:20:05] k_link_placements table ensured
+[2025-10-26 20:20:05] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:20:05] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:20:05] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:20:05] Purchased links for uid=11: 1
+[2025-10-26 20:20:05] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:20:05] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:20:19] Updated k_orders with data from k_link_placements
+[2025-10-26 20:20:19] k_link_placements table ensured
+[2025-10-26 20:20:19] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:20:19] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:20:19] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:20:19] Purchased links for uid=10: 53
+[2025-10-26 20:20:19] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:20:19] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:20:34] Updated k_orders with data from k_link_placements
+[2025-10-26 20:20:34] k_link_placements table ensured
+[2025-10-26 20:20:34] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:20:34] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:20:34] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:20:34] Purchased links for uid=10: 53
+[2025-10-26 20:20:34] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:20:34] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:20:49] Updated k_orders with data from k_link_placements
+[2025-10-26 20:20:49] k_link_placements table ensured
+[2025-10-26 20:20:49] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:20:49] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:20:49] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:20:49] Purchased links for uid=10: 53
+[2025-10-26 20:20:49] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:20:49] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:21:04] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:04] k_link_placements table ensured
+[2025-10-26 20:21:04] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:21:04] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:04] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:04] Purchased links for uid=10: 53
+[2025-10-26 20:21:04] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:21:04] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:21:05] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:05] k_link_placements table ensured
+[2025-10-26 20:21:05] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:05] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:05] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:05] Purchased links for uid=11: 1
+[2025-10-26 20:21:05] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:21:05] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:21:14] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:14] k_link_placements table ensured
+[2025-10-26 20:21:14] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:14] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:14] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:14] Purchased links for uid=11: 1
+[2025-10-26 20:21:16] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:16] k_link_placements table ensured
+[2025-10-26 20:21:16] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:16] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:16] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:16] Purchased links for uid=11: 1
+[2025-10-26 20:21:16] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:21:16] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:21:17] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:17] k_link_placements table ensured
+[2025-10-26 20:21:17] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:17] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:17] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:17] Purchased links for uid=11: 1
+[2025-10-26 20:21:19] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:19] k_link_placements table ensured
+[2025-10-26 20:21:19] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:21:19] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:19] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:19] Purchased links for uid=10: 53
+[2025-10-26 20:21:19] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:21:19] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:21:20] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:20] k_link_placements table ensured
+[2025-10-26 20:21:20] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:20] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:20] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:20] Purchased links for uid=11: 1
+[2025-10-26 20:21:22] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:22] k_link_placements table ensured
+[2025-10-26 20:21:22] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:22] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:22] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:22] Purchased links for uid=11: 1
+[2025-10-26 20:21:22] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:21:22] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:21:22] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:22] k_link_placements table ensured
+[2025-10-26 20:21:22] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:22] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:22] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:22] Purchased links for uid=11: 1
+[2025-10-26 20:21:34] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:34] k_link_placements table ensured
+[2025-10-26 20:21:34] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:21:34] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:34] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:34] Purchased links for uid=10: 53
+[2025-10-26 20:21:34] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:21:34] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:21:39] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:39] k_link_placements table ensured
+[2025-10-26 20:21:39] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:39] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:39] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:39] Purchased links for uid=11: 1
+[2025-10-26 20:21:40] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:40] k_link_placements table ensured
+[2025-10-26 20:21:40] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:41] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:41] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:41] Purchased links for uid=11: 1
+[2025-10-26 20:21:41] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:21:41] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:21:41] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:41] k_link_placements table ensured
+[2025-10-26 20:21:41] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:41] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:41] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:41] Purchased links for uid=11: 1
+[2025-10-26 20:21:49] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:49] k_link_placements table ensured
+[2025-10-26 20:21:49] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:21:49] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:49] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:49] Purchased links for uid=10: 53
+[2025-10-26 20:21:49] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:21:49] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:21:56] Updated k_orders with data from k_link_placements
+[2025-10-26 20:21:56] k_link_placements table ensured
+[2025-10-26 20:21:56] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:21:56] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:21:56] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:21:56] Purchased links for uid=11: 1
+[2025-10-26 20:21:56] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:21:56] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:22:04] Updated k_orders with data from k_link_placements
+[2025-10-26 20:22:04] k_link_placements table ensured
+[2025-10-26 20:22:04] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:22:04] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:22:04] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:22:04] Purchased links for uid=10: 53
+[2025-10-26 20:22:04] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:22:04] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:22:11] Updated k_orders with data from k_link_placements
+[2025-10-26 20:22:11] k_link_placements table ensured
+[2025-10-26 20:22:11] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:22:11] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:22:11] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:22:11] Purchased links for uid=11: 1
+[2025-10-26 20:22:11] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:22:11] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:22:18] Updated k_orders with data from k_link_placements
+[2025-10-26 20:22:18] k_link_placements table ensured
+[2025-10-26 20:22:18] User credit fetched: uid=11, credit=1301
+[2025-10-26 20:22:18] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:22:18] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:22:18] Purchased links for uid=11: 1
+[2025-10-26 20:22:18] === SINGLE BUY STARTED ===
+[2025-10-26 20:22:18] Single buy attempt: lid=1923, target_url=https://www.googleseo.co/, keyword='메이저사이트', duration=30d
+[2025-10-26 20:22:18] Inserting into k_orders: uid=11, lid=1923, target_url='https://www.googleseo.co/', keyword='메이저사이트'
+[2025-10-26 20:22:18] === AUTO_PLACE_LINK STARTED ===
+[2025-10-26 20:22:18] Parameters - lid: 1923, domain: zawoja.pl, target_url: https://www.googleseo.co/, keyword: '메이저사이트', receiver_id: 1
+[2025-10-26 20:22:18] Using user provided keyword: '메이저사이트'
+[2025-10-26 20:22:18] Receiver URL: https://hack-link.com/api/receiver.php
+[2025-10-26 20:22:18] Updated k_orders with target_url: 'https://www.googleseo.co/' and keyword: '메이저사이트'
+[2025-10-26 20:22:18] Inserted placement log: pid=6
+[2025-10-26 20:22:18] Sending payload to receiver: {"secret":"my_secret_key_12345","operation":"place_link","domain":"zawoja.pl","target_url":"https:\/\/www.googleseo.co\/","keyword":"\uba54\uc774\uc800\uc0ac\uc774\ud2b8"}
+[2025-10-26 20:22:18] API response: {"ok":1,"msg":"Backlink published","page":"https:\/\/hack-link.com\/backlinks\/zawoja.pl\/","entries":1}
+[2025-10-26 20:22:18] === AUTO_PLACE_LINK COMPLETED - Status: success ===
+[2025-10-26 20:22:18] === SINGLE BUY COMPLETED ===
+[2025-10-26 20:22:19] Updated k_orders with data from k_link_placements
+[2025-10-26 20:22:19] k_link_placements table ensured
+[2025-10-26 20:22:19] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:22:19] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:22:19] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:22:19] Purchased links for uid=10: 53
+[2025-10-26 20:22:19] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:22:19] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:22:34] Updated k_orders with data from k_link_placements
+[2025-10-26 20:22:34] k_link_placements table ensured
+[2025-10-26 20:22:34] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:22:34] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:22:34] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:22:34] Purchased links for uid=10: 53
+[2025-10-26 20:22:34] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:22:34] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:22:50] Updated k_orders with data from k_link_placements
+[2025-10-26 20:22:50] k_link_placements table ensured
+[2025-10-26 20:22:50] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:22:50] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:22:50] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:22:50] Purchased links for uid=10: 53
+[2025-10-26 20:22:50] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:22:50] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:23:06] Updated k_orders with data from k_link_placements
+[2025-10-26 20:23:06] k_link_placements table ensured
+[2025-10-26 20:23:06] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:23:06] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:23:06] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:23:06] Purchased links for uid=10: 53
+[2025-10-26 20:23:06] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:23:06] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:23:22] Updated k_orders with data from k_link_placements
+[2025-10-26 20:23:22] k_link_placements table ensured
+[2025-10-26 20:23:22] User credit fetched: uid=10, credit=2733
+[2025-10-26 20:23:22] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:23:22] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:23:22] Purchased links for uid=10: 53
+[2025-10-26 20:23:22] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:23:22] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:37:15] Updated k_orders with data from k_link_placements
+[2025-10-26 20:37:15] k_link_placements table ensured
+[2025-10-26 20:37:15] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:37:15] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:37:15] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:37:15] Purchased links for uid=11: 2
+[2025-10-26 20:37:17] Updated k_orders with data from k_link_placements
+[2025-10-26 20:37:17] k_link_placements table ensured
+[2025-10-26 20:37:17] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:37:17] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:37:17] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:37:17] Purchased links for uid=11: 2
+[2025-10-26 20:37:17] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:37:17] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:37:17] Updated k_orders with data from k_link_placements
+[2025-10-26 20:37:17] k_link_placements table ensured
+[2025-10-26 20:37:17] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:37:17] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:37:17] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:37:17] Purchased links for uid=11: 2
+[2025-10-26 20:37:35] Updated k_orders with data from k_link_placements
+[2025-10-26 20:37:35] k_link_placements table ensured
+[2025-10-26 20:37:35] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:37:35] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:37:35] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:37:35] Purchased links for uid=11: 2
+[2025-10-26 20:37:36] Updated k_orders with data from k_link_placements
+[2025-10-26 20:37:36] k_link_placements table ensured
+[2025-10-26 20:37:36] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:37:36] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:37:36] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:37:36] Purchased links for uid=11: 2
+[2025-10-26 20:37:36] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:37:36] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:37:36] Updated k_orders with data from k_link_placements
+[2025-10-26 20:37:36] k_link_placements table ensured
+[2025-10-26 20:37:36] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:37:36] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:37:36] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:37:36] Purchased links for uid=11: 2
+[2025-10-26 20:37:53] Updated k_orders with data from k_link_placements
+[2025-10-26 20:37:53] k_link_placements table ensured
+[2025-10-26 20:37:53] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:37:53] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:37:53] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:37:53] Purchased links for uid=11: 2
+[2025-10-26 20:37:54] Updated k_orders with data from k_link_placements
+[2025-10-26 20:37:54] k_link_placements table ensured
+[2025-10-26 20:37:54] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:37:54] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:37:54] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:37:54] Purchased links for uid=11: 2
+[2025-10-26 20:37:54] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:37:54] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:37:54] Updated k_orders with data from k_link_placements
+[2025-10-26 20:37:54] k_link_placements table ensured
+[2025-10-26 20:37:54] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:37:54] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:37:54] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:37:54] Purchased links for uid=11: 2
+[2025-10-26 20:38:10] Updated k_orders with data from k_link_placements
+[2025-10-26 20:38:10] k_link_placements table ensured
+[2025-10-26 20:38:10] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:38:10] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:38:10] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:38:10] Purchased links for uid=11: 2
+[2025-10-26 20:38:10] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:38:10] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:38:25] Updated k_orders with data from k_link_placements
+[2025-10-26 20:38:25] k_link_placements table ensured
+[2025-10-26 20:38:25] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:38:25] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:38:25] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:38:25] Purchased links for uid=11: 2
+[2025-10-26 20:38:25] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:38:25] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:38:41] Updated k_orders with data from k_link_placements
+[2025-10-26 20:38:41] k_link_placements table ensured
+[2025-10-26 20:38:41] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:38:41] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:38:41] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:38:41] Purchased links for uid=11: 2
+[2025-10-26 20:38:41] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:38:41] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:38:57] Updated k_orders with data from k_link_placements
+[2025-10-26 20:38:57] k_link_placements table ensured
+[2025-10-26 20:38:57] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:38:57] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:38:57] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:38:57] Purchased links for uid=11: 2
+[2025-10-26 20:38:57] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:38:57] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:39:13] Updated k_orders with data from k_link_placements
+[2025-10-26 20:39:13] k_link_placements table ensured
+[2025-10-26 20:39:13] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:39:13] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:39:13] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:39:13] Purchased links for uid=11: 2
+[2025-10-26 20:39:13] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:39:13] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:39:29] Updated k_orders with data from k_link_placements
+[2025-10-26 20:39:29] k_link_placements table ensured
+[2025-10-26 20:39:29] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:39:29] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:39:29] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:39:29] Purchased links for uid=11: 2
+[2025-10-26 20:39:29] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 20:39:29] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 20:47:19] Updated k_orders with data from k_link_placements
+[2025-10-26 20:47:19] k_link_placements table ensured
+[2025-10-26 20:47:19] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:47:19] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:47:19] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:47:19] Purchased links for uid=11: 2
+[2025-10-26 20:47:20] Updated k_orders with data from k_link_placements
+[2025-10-26 20:47:20] k_link_placements table ensured
+[2025-10-26 20:47:20] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:47:20] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:47:20] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:47:20] Purchased links for uid=11: 2
+[2025-10-26 20:47:20] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 20:47:20] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 20:47:21] Updated k_orders with data from k_link_placements
+[2025-10-26 20:47:21] k_link_placements table ensured
+[2025-10-26 20:47:21] User credit fetched: uid=11, credit=1299
+[2025-10-26 20:47:21] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 20:47:21] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 20:47:21] Purchased links for uid=11: 2
+[2025-10-26 21:14:25] Updated k_orders with data from k_link_placements
+[2025-10-26 21:14:25] k_link_placements table ensured
+[2025-10-26 21:14:25] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:14:25] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:14:25] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:14:25] Purchased links for uid=10: 53
+[2025-10-26 21:14:27] Updated k_orders with data from k_link_placements
+[2025-10-26 21:14:27] k_link_placements table ensured
+[2025-10-26 21:14:27] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:14:27] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:14:27] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:14:27] Purchased links for uid=10: 53
+[2025-10-26 21:14:27] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2350' ORDER BY id DESC LIMIT 100, fetched 41 rows
+[2025-10-26 21:14:27] Returning 41 new links for last_id=2350, search=''
+[2025-10-26 21:14:27] Updated k_orders with data from k_link_placements
+[2025-10-26 21:14:27] k_link_placements table ensured
+[2025-10-26 21:14:27] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:14:27] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:14:27] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:14:27] Purchased links for uid=10: 53
+[2025-10-26 21:14:27] Error getting receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-26 21:14:28] Updated k_orders with data from k_link_placements
+[2025-10-26 21:14:28] k_link_placements table ensured
+[2025-10-26 21:14:28] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:14:28] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:14:28] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:14:28] Purchased links for uid=10: 53
+[2025-10-26 21:14:43] Updated k_orders with data from k_link_placements
+[2025-10-26 21:14:43] k_link_placements table ensured
+[2025-10-26 21:14:43] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:14:43] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:14:43] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:14:43] Purchased links for uid=10: 53
+[2025-10-26 21:14:43] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:14:43] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:14:48] Updated k_orders with data from k_link_placements
+[2025-10-26 21:14:48] k_link_placements table ensured
+[2025-10-26 21:14:48] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:14:48] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:14:48] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:14:48] Purchased links for uid=10: 53
+[2025-10-26 21:14:48] Error getting receivers: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-26 21:14:58] Updated k_orders with data from k_link_placements
+[2025-10-26 21:14:58] k_link_placements table ensured
+[2025-10-26 21:14:58] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:14:58] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:14:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:14:58] Purchased links for uid=10: 53
+[2025-10-26 21:14:58] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:14:58] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:15:14] Updated k_orders with data from k_link_placements
+[2025-10-26 21:15:14] k_link_placements table ensured
+[2025-10-26 21:15:14] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:15:14] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:15:14] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:15:14] Purchased links for uid=10: 53
+[2025-10-26 21:15:14] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:15:14] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:15:30] Updated k_orders with data from k_link_placements
+[2025-10-26 21:15:30] k_link_placements table ensured
+[2025-10-26 21:15:30] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:15:30] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:15:30] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:15:30] Purchased links for uid=10: 53
+[2025-10-26 21:15:30] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:15:30] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:15:46] Updated k_orders with data from k_link_placements
+[2025-10-26 21:15:46] k_link_placements table ensured
+[2025-10-26 21:15:46] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:15:46] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:15:46] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:15:46] Purchased links for uid=10: 53
+[2025-10-26 21:15:46] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:15:46] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:16:02] Updated k_orders with data from k_link_placements
+[2025-10-26 21:16:02] k_link_placements table ensured
+[2025-10-26 21:16:02] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:16:02] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:16:02] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:16:02] Purchased links for uid=10: 53
+[2025-10-26 21:16:02] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:16:02] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:16:18] Updated k_orders with data from k_link_placements
+[2025-10-26 21:16:18] k_link_placements table ensured
+[2025-10-26 21:16:18] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:16:18] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:16:18] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:16:18] Purchased links for uid=10: 53
+[2025-10-26 21:16:18] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:16:18] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:17:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:17:08] k_link_placements table ensured
+[2025-10-26 21:17:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:17:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:17:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:17:08] Purchased links for uid=10: 53
+[2025-10-26 21:17:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:17:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:18:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:18:08] k_link_placements table ensured
+[2025-10-26 21:18:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:18:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:18:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:18:08] Purchased links for uid=10: 53
+[2025-10-26 21:18:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:18:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:19:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:19:08] k_link_placements table ensured
+[2025-10-26 21:19:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:19:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:19:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:19:08] Purchased links for uid=10: 53
+[2025-10-26 21:19:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:19:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:20:04] Updated k_orders with data from k_link_placements
+[2025-10-26 21:20:04] k_link_placements table ensured
+[2025-10-26 21:20:04] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:20:04] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:20:04] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:20:04] Purchased links for uid=10: 53
+[2025-10-26 21:20:04] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:20:04] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:20:20] Updated k_orders with data from k_link_placements
+[2025-10-26 21:20:20] k_link_placements table ensured
+[2025-10-26 21:20:20] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:20:20] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:20:20] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:20:20] Purchased links for uid=10: 53
+[2025-10-26 21:20:20] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:20:20] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:20:36] Updated k_orders with data from k_link_placements
+[2025-10-26 21:20:36] k_link_placements table ensured
+[2025-10-26 21:20:36] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:20:36] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:20:36] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:20:36] Purchased links for uid=10: 53
+[2025-10-26 21:20:36] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:20:36] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:20:48] Updated k_orders with data from k_link_placements
+[2025-10-26 21:20:48] k_link_placements table ensured
+[2025-10-26 21:20:48] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:20:48] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:20:48] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:20:48] Purchased links for uid=10: 53
+[2025-10-26 21:20:48] Error saving receiver: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[2025-10-26 21:20:50] Updated k_orders with data from k_link_placements
+[2025-10-26 21:20:50] k_link_placements table ensured
+[2025-10-26 21:20:50] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:20:50] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:20:50] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:20:50] Purchased links for uid=10: 53
+[2025-10-26 21:20:50] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:20:50] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:21:07] Updated k_orders with data from k_link_placements
+[2025-10-26 21:21:07] k_link_placements table ensured
+[2025-10-26 21:21:07] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:21:07] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:21:07] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:21:07] Purchased links for uid=10: 53
+[2025-10-26 21:21:07] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:21:07] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:21:23] Updated k_orders with data from k_link_placements
+[2025-10-26 21:21:23] k_link_placements table ensured
+[2025-10-26 21:21:23] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:21:23] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:21:23] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:21:23] Purchased links for uid=10: 53
+[2025-10-26 21:21:23] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:21:23] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:21:30] Updated k_orders with data from k_link_placements
+[2025-10-26 21:21:30] k_link_placements table ensured
+[2025-10-26 21:21:30] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:21:30] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:21:30] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:21:30] Purchased links for uid=10: 53
+[2025-10-26 21:21:30] Inserted new receiver: Test (https://ardmasaleh.ir/wp-includes/Requests/666.php)
+[2025-10-26 21:21:32] Updated k_orders with data from k_link_placements
+[2025-10-26 21:21:32] k_link_placements table ensured
+[2025-10-26 21:21:32] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:21:32] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:21:32] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:21:32] Purchased links for uid=10: 53
+[2025-10-26 21:21:32] Updated k_orders with data from k_link_placements
+[2025-10-26 21:21:32] k_link_placements table ensured
+[2025-10-26 21:21:32] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:21:32] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:21:32] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:21:32] Purchased links for uid=10: 53
+[2025-10-26 21:21:54] Updated k_orders with data from k_link_placements
+[2025-10-26 21:21:54] k_link_placements table ensured
+[2025-10-26 21:21:54] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:21:54] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:21:54] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:21:54] Purchased links for uid=10: 53
+[2025-10-26 21:21:54] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:21:54] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:22:09] Updated k_orders with data from k_link_placements
+[2025-10-26 21:22:09] k_link_placements table ensured
+[2025-10-26 21:22:09] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:22:09] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:22:09] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:22:09] Purchased links for uid=10: 53
+[2025-10-26 21:22:09] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:22:09] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:22:25] Updated k_orders with data from k_link_placements
+[2025-10-26 21:22:25] k_link_placements table ensured
+[2025-10-26 21:22:25] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:22:25] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:22:25] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:22:25] Purchased links for uid=10: 53
+[2025-10-26 21:22:25] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:22:25] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:22:41] Updated k_orders with data from k_link_placements
+[2025-10-26 21:22:41] k_link_placements table ensured
+[2025-10-26 21:22:41] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:22:41] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:22:41] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:22:41] Purchased links for uid=10: 53
+[2025-10-26 21:22:41] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:22:41] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:22:57] Updated k_orders with data from k_link_placements
+[2025-10-26 21:22:57] k_link_placements table ensured
+[2025-10-26 21:22:57] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:22:57] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:22:57] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:22:57] Purchased links for uid=10: 53
+[2025-10-26 21:22:57] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:22:57] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:23:58] Updated k_orders with data from k_link_placements
+[2025-10-26 21:23:58] k_link_placements table ensured
+[2025-10-26 21:23:58] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:23:58] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:23:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:23:58] Purchased links for uid=10: 53
+[2025-10-26 21:23:58] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:23:58] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:24:59] Updated k_orders with data from k_link_placements
+[2025-10-26 21:24:59] k_link_placements table ensured
+[2025-10-26 21:24:59] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:24:59] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:24:59] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:24:59] Purchased links for uid=10: 53
+[2025-10-26 21:24:59] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:24:59] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:26:00] Updated k_orders with data from k_link_placements
+[2025-10-26 21:26:00] k_link_placements table ensured
+[2025-10-26 21:26:00] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:26:00] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:26:00] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:26:00] Purchased links for uid=10: 53
+[2025-10-26 21:26:00] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:26:00] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:27:01] Updated k_orders with data from k_link_placements
+[2025-10-26 21:27:01] k_link_placements table ensured
+[2025-10-26 21:27:01] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:27:01] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:27:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:27:01] Purchased links for uid=10: 53
+[2025-10-26 21:27:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:27:01] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:28:02] Updated k_orders with data from k_link_placements
+[2025-10-26 21:28:02] k_link_placements table ensured
+[2025-10-26 21:28:02] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:28:02] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:28:02] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:28:02] Purchased links for uid=10: 53
+[2025-10-26 21:28:02] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:28:02] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:29:03] Updated k_orders with data from k_link_placements
+[2025-10-26 21:29:03] k_link_placements table ensured
+[2025-10-26 21:29:03] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:29:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:29:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:29:03] Purchased links for uid=10: 53
+[2025-10-26 21:29:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:29:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:30:04] Updated k_orders with data from k_link_placements
+[2025-10-26 21:30:04] k_link_placements table ensured
+[2025-10-26 21:30:04] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:30:04] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:30:04] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:30:04] Purchased links for uid=10: 53
+[2025-10-26 21:30:04] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:30:04] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:30:58] Updated k_orders with data from k_link_placements
+[2025-10-26 21:30:58] k_link_placements table ensured
+[2025-10-26 21:30:58] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:30:58] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:30:58] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:30:58] Purchased links for uid=10: 53
+[2025-10-26 21:30:58] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:30:58] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:31:01] Updated k_orders with data from k_link_placements
+[2025-10-26 21:31:01] k_link_placements table ensured
+[2025-10-26 21:31:01] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:31:01] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:31:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:31:01] Purchased links for uid=10: 53
+[2025-10-26 21:31:13] Updated k_orders with data from k_link_placements
+[2025-10-26 21:31:13] k_link_placements table ensured
+[2025-10-26 21:31:13] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:31:13] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:31:13] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:31:13] Purchased links for uid=10: 53
+[2025-10-26 21:31:13] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:31:13] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:31:18] Updated k_orders with data from k_link_placements
+[2025-10-26 21:31:18] k_link_placements table ensured
+[2025-10-26 21:31:18] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:31:18] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:31:18] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:31:18] Purchased links for uid=10: 53
+[2025-10-26 21:31:18] Inserted new receiver: Mew (https://ardmasaleh.ir/wp-includes/Requests/777.php)
+[2025-10-26 21:31:19] Updated k_orders with data from k_link_placements
+[2025-10-26 21:31:19] k_link_placements table ensured
+[2025-10-26 21:31:19] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:31:19] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:31:19] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:31:19] Purchased links for uid=10: 53
+[2025-10-26 21:31:20] Updated k_orders with data from k_link_placements
+[2025-10-26 21:31:20] k_link_placements table ensured
+[2025-10-26 21:31:20] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:31:20] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:31:20] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:31:20] Purchased links for uid=10: 53
+[2025-10-26 21:31:29] Updated k_orders with data from k_link_placements
+[2025-10-26 21:31:29] k_link_placements table ensured
+[2025-10-26 21:31:29] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:31:29] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:31:29] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:31:29] Purchased links for uid=10: 53
+[2025-10-26 21:31:29] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:31:29] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:31:45] Updated k_orders with data from k_link_placements
+[2025-10-26 21:31:45] k_link_placements table ensured
+[2025-10-26 21:31:45] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:31:45] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:31:45] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:31:45] Purchased links for uid=10: 53
+[2025-10-26 21:31:45] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:31:45] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:32:01] Updated k_orders with data from k_link_placements
+[2025-10-26 21:32:01] k_link_placements table ensured
+[2025-10-26 21:32:01] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:32:01] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:32:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:32:01] Purchased links for uid=10: 53
+[2025-10-26 21:32:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:32:01] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:32:17] Updated k_orders with data from k_link_placements
+[2025-10-26 21:32:17] k_link_placements table ensured
+[2025-10-26 21:32:17] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:32:17] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:32:17] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:32:17] Purchased links for uid=10: 53
+[2025-10-26 21:32:17] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:32:17] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:33:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:33:08] k_link_placements table ensured
+[2025-10-26 21:33:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:33:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:33:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:33:08] Purchased links for uid=10: 53
+[2025-10-26 21:33:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:33:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:34:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:34:08] k_link_placements table ensured
+[2025-10-26 21:34:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:34:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:34:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:34:08] Purchased links for uid=10: 53
+[2025-10-26 21:34:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:34:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:35:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:35:08] k_link_placements table ensured
+[2025-10-26 21:35:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:35:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:35:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:35:08] Purchased links for uid=10: 53
+[2025-10-26 21:35:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:35:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:35:56] Updated k_orders with data from k_link_placements
+[2025-10-26 21:35:56] k_link_placements table ensured
+[2025-10-26 21:35:56] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:35:56] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:35:56] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:35:56] Purchased links for uid=10: 53
+[2025-10-26 21:35:56] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:35:56] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:36:11] Updated k_orders with data from k_link_placements
+[2025-10-26 21:36:11] k_link_placements table ensured
+[2025-10-26 21:36:11] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:36:11] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:36:11] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:36:11] Purchased links for uid=10: 53
+[2025-10-26 21:36:11] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:36:11] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:36:27] Updated k_orders with data from k_link_placements
+[2025-10-26 21:36:27] k_link_placements table ensured
+[2025-10-26 21:36:27] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:36:27] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:36:27] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:36:27] Purchased links for uid=10: 53
+[2025-10-26 21:36:27] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:36:27] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:36:43] Updated k_orders with data from k_link_placements
+[2025-10-26 21:36:43] k_link_placements table ensured
+[2025-10-26 21:36:43] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:36:43] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:36:43] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:36:43] Purchased links for uid=10: 53
+[2025-10-26 21:36:43] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:36:43] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:36:59] Updated k_orders with data from k_link_placements
+[2025-10-26 21:36:59] k_link_placements table ensured
+[2025-10-26 21:36:59] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:36:59] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:36:59] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:36:59] Purchased links for uid=10: 53
+[2025-10-26 21:36:59] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:36:59] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:38:00] Updated k_orders with data from k_link_placements
+[2025-10-26 21:38:00] k_link_placements table ensured
+[2025-10-26 21:38:00] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:38:00] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:38:00] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:38:00] Purchased links for uid=10: 53
+[2025-10-26 21:38:00] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:38:00] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:39:01] Updated k_orders with data from k_link_placements
+[2025-10-26 21:39:01] k_link_placements table ensured
+[2025-10-26 21:39:01] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:39:01] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:39:01] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:39:01] Purchased links for uid=10: 53
+[2025-10-26 21:39:01] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:39:01] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:40:02] Updated k_orders with data from k_link_placements
+[2025-10-26 21:40:02] k_link_placements table ensured
+[2025-10-26 21:40:02] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:40:02] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:40:02] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:40:02] Purchased links for uid=10: 53
+[2025-10-26 21:40:02] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:40:02] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:41:03] Updated k_orders with data from k_link_placements
+[2025-10-26 21:41:03] k_link_placements table ensured
+[2025-10-26 21:41:03] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:41:03] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:41:03] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:41:03] Purchased links for uid=10: 53
+[2025-10-26 21:41:03] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:41:03] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:42:04] Updated k_orders with data from k_link_placements
+[2025-10-26 21:42:04] k_link_placements table ensured
+[2025-10-26 21:42:04] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:42:04] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:42:04] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:42:04] Purchased links for uid=10: 53
+[2025-10-26 21:42:04] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:42:04] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:43:05] Updated k_orders with data from k_link_placements
+[2025-10-26 21:43:05] k_link_placements table ensured
+[2025-10-26 21:43:05] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:43:05] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:43:05] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:43:05] Purchased links for uid=10: 53
+[2025-10-26 21:43:05] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:43:05] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:44:06] Updated k_orders with data from k_link_placements
+[2025-10-26 21:44:06] k_link_placements table ensured
+[2025-10-26 21:44:06] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:44:06] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:44:06] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:44:06] Purchased links for uid=10: 53
+[2025-10-26 21:44:06] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:44:06] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:45:07] Updated k_orders with data from k_link_placements
+[2025-10-26 21:45:07] k_link_placements table ensured
+[2025-10-26 21:45:07] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:45:07] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:45:07] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:45:07] Purchased links for uid=10: 53
+[2025-10-26 21:45:07] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:45:07] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:46:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:46:08] k_link_placements table ensured
+[2025-10-26 21:46:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:46:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:46:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:46:08] Purchased links for uid=10: 53
+[2025-10-26 21:46:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:46:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:47:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:47:08] k_link_placements table ensured
+[2025-10-26 21:47:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:47:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:47:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:47:08] Purchased links for uid=10: 53
+[2025-10-26 21:47:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:47:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:48:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:48:08] k_link_placements table ensured
+[2025-10-26 21:48:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:48:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:48:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:48:08] Purchased links for uid=10: 53
+[2025-10-26 21:48:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:48:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:49:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:49:08] k_link_placements table ensured
+[2025-10-26 21:49:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:49:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:49:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:49:08] Purchased links for uid=10: 53
+[2025-10-26 21:49:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:49:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:50:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:50:08] k_link_placements table ensured
+[2025-10-26 21:50:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:50:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:50:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:50:08] Purchased links for uid=10: 53
+[2025-10-26 21:50:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:50:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:51:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:51:08] k_link_placements table ensured
+[2025-10-26 21:51:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:51:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:51:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:51:08] Purchased links for uid=10: 53
+[2025-10-26 21:51:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:51:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:52:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:52:08] k_link_placements table ensured
+[2025-10-26 21:52:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:52:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:52:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:52:08] Purchased links for uid=10: 53
+[2025-10-26 21:52:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:52:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:53:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:53:08] k_link_placements table ensured
+[2025-10-26 21:53:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:53:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:53:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:53:08] Purchased links for uid=10: 53
+[2025-10-26 21:53:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:53:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:54:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:54:08] k_link_placements table ensured
+[2025-10-26 21:54:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:54:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:54:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:54:08] Purchased links for uid=10: 53
+[2025-10-26 21:54:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:54:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:55:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:55:08] k_link_placements table ensured
+[2025-10-26 21:55:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:55:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:55:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:55:08] Purchased links for uid=10: 53
+[2025-10-26 21:55:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:55:08] Returning 0 new links for last_id=2391, search=''
+[2025-10-26 21:56:08] Updated k_orders with data from k_link_placements
+[2025-10-26 21:56:08] k_link_placements table ensured
+[2025-10-26 21:56:08] User credit fetched: uid=10, credit=2733
+[2025-10-26 21:56:08] Stats: totalLinks=2391, totalCredit=3987823719132, phpCount=2391, jsCount=0
+[2025-10-26 21:56:08] Initial fetch: 500 rows from k_linkdb
+[2025-10-26 21:56:08] Purchased links for uid=10: 53
+[2025-10-26 21:56:08] New links query: SELECT id, domain, link, tip, durum, ups, alexa1, alexa2, created_at FROM k_linkdb WHERE (durum='1' OR durum IS NULL) AND id > '2391' ORDER BY id DESC LIMIT 100, fetched 0 rows
+[2025-10-26 21:56:08] Returning 0 new links for last_id=2391, search=''

@@ -1,0 +1,314 @@
+Using uid: 0
+k_single query returned: 0 rows for uid=0
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 23
+k_single query returned: 0 rows for uid=23
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 24
+k_single query returned: 0 rows for uid=24
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 24
+k_single query returned: 0 rows for uid=24
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 0
+k_single query returned: 0 rows for uid=0
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 25
+k_single query returned: 0 rows for uid=25
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 26
+k_single query returned: 0 rows for uid=26
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 26
+k_single query returned: 0 rows for uid=26
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 26
+k_single query returned: 0 rows for uid=26
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 26
+k_single query returned: 0 rows for uid=26
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 25
+k_single query returned: 0 rows for uid=25
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 25
+k_single query returned: 0 rows for uid=25
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 27
+k_single query returned: 0 rows for uid=27
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 27
+k_single query returned: 0 rows for uid=27
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 28
+k_single query returned: 0 rows for uid=28
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 0 rows
+k_multi query (tip=2) returned: 0 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 0 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+Total rows in k_single: 355688
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Total rows in k_multi: 3365
+Distinct tip values in k_multi: [1,2]
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Union query returned: 7 rows
+Using uid: 10
+k_single query returned: 3 rows for uid=10
+k_multi query (tip=1) returned: 2 rows
+k_multi query (tip=2) returned: 2 rows
+Union query returned: 7 rows

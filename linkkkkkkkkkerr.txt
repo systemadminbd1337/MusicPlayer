@@ -1,0 +1,850 @@
+[2025-10-29 00:04:28] === MY LINKS PAGE STARTED ===
+[2025-10-29 00:04:29] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-28 18:14:27
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 2667
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2696
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 00:04:29] User ID: 10
+[2025-10-29 00:04:29] Credit column: kredi
+[2025-10-29 00:04:29] User credits: 2667
+[2025-10-29 00:04:29] target_url column exists: YES
+[2025-10-29 00:04:29] keyword column exists: YES
+[2025-10-29 00:04:29] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 00:04:29] Total links for user 10: 1
+[2025-10-29 00:04:29] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 00:04:29] Query returned 1 rows
+[2025-10-29 00:04:29] First row data: stdClass Object
+(
+    [oid] => 39041
+    [order_credit] => 0.00
+    [auto_renew] => 0
+    [target_url] => https://systemadminbd.com/botnet
+    [user_keyword] => Tahmid
+    [expiry_date] => 2026-01-26
+    [domain] => systemadminbd.com
+    [link] => 
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-28 23:44:27
+    [remaining_days] => 89
+)
+
+[2025-10-29 00:04:29] === MY LINKS PAGE COMPLETED ===
+[2025-10-29 00:05:00] === MY LINKS PAGE STARTED ===
+[2025-10-29 00:05:00] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-28 18:14:27
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 2667
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2696
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 00:05:00] User ID: 10
+[2025-10-29 00:05:00] Credit column: kredi
+[2025-10-29 00:05:00] User credits: 2666
+[2025-10-29 00:05:00] target_url column exists: YES
+[2025-10-29 00:05:00] keyword column exists: YES
+[2025-10-29 00:05:00] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 00:05:00] Total links for user 10: 1
+[2025-10-29 00:05:00] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 00:05:00] Query returned 1 rows
+[2025-10-29 00:05:00] First row data: stdClass Object
+(
+    [oid] => 39041
+    [order_credit] => 0.00
+    [auto_renew] => 0
+    [target_url] => https://systemadminbd.com/botnet
+    [user_keyword] => Tahmid
+    [expiry_date] => 2025-11-28
+    [domain] => systemadminbd.com
+    [link] => 
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-28 23:44:27
+    [remaining_days] => 30
+)
+
+[2025-10-29 00:05:00] === MY LINKS PAGE COMPLETED ===
+[2025-10-29 00:05:09] === MY LINKS PAGE STARTED ===
+[2025-10-29 00:05:09] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-28 18:14:27
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 2666
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2696
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 00:05:09] User ID: 10
+[2025-10-29 00:05:09] Credit column: kredi
+[2025-10-29 00:05:09] User credits: 2665
+[2025-10-29 00:05:09] target_url column exists: YES
+[2025-10-29 00:05:09] keyword column exists: YES
+[2025-10-29 00:05:09] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 00:05:09] Total links for user 10: 1
+[2025-10-29 00:05:09] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 00:05:09] Query returned 1 rows
+[2025-10-29 00:05:09] First row data: stdClass Object
+(
+    [oid] => 39041
+    [order_credit] => 0.00
+    [auto_renew] => 0
+    [target_url] => https://systemadminbd.com/botnet
+    [user_keyword] => Tahmid
+    [expiry_date] => 2025-12-28
+    [domain] => systemadminbd.com
+    [link] => 
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-28 23:44:27
+    [remaining_days] => 60
+)
+
+[2025-10-29 00:05:09] === MY LINKS PAGE COMPLETED ===
+[2025-10-29 00:05:15] === MY LINKS PAGE STARTED ===
+[2025-10-29 00:05:15] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-28 18:14:27
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 2665
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2696
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 00:05:15] User ID: 10
+[2025-10-29 00:05:15] Credit column: kredi
+[2025-10-29 00:05:15] User credits: 2665
+[2025-10-29 00:05:15] target_url column exists: YES
+[2025-10-29 00:05:15] keyword column exists: YES
+[2025-10-29 00:05:15] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 00:05:15] Total links for user 10: 1
+[2025-10-29 00:05:15] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 00:05:15] Query returned 1 rows
+[2025-10-29 00:05:15] First row data: stdClass Object
+(
+    [oid] => 39041
+    [order_credit] => 0.00
+    [auto_renew] => 0
+    [target_url] => https://systemadminbd.com/botnet
+    [user_keyword] => Tahmid
+    [expiry_date] => 2025-12-28
+    [domain] => systemadminbd.com
+    [link] => 
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-28 23:44:27
+    [remaining_days] => 60
+)
+
+[2025-10-29 00:05:15] === MY LINKS PAGE COMPLETED ===
+[2025-10-29 00:05:18] === MY LINKS PAGE STARTED ===
+[2025-10-29 00:05:18] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-28 18:14:27
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 2665
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2696
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 00:05:18] User ID: 10
+[2025-10-29 00:05:18] Credit column: kredi
+[2025-10-29 00:05:18] User credits: 2665
+[2025-10-29 00:05:18] target_url column exists: YES
+[2025-10-29 00:05:18] keyword column exists: YES
+[2025-10-29 00:05:18] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 00:05:18] Total links for user 10: 1
+[2025-10-29 00:05:18] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 00:05:18] Query returned 1 rows
+[2025-10-29 00:05:18] First row data: stdClass Object
+(
+    [oid] => 39041
+    [order_credit] => 0.00
+    [auto_renew] => 0
+    [target_url] => https://systemadminbd.com/botnet
+    [user_keyword] => Tahmid
+    [expiry_date] => 2025-12-28
+    [domain] => systemadminbd.com
+    [link] => 
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-28 23:44:27
+    [remaining_days] => 60
+)
+
+[2025-10-29 00:05:18] === MY LINKS PAGE COMPLETED ===
+[2025-10-29 00:05:22] === MY LINKS PAGE STARTED ===
+[2025-10-29 00:05:22] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-28 18:14:27
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 2665
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2696
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 00:05:22] User ID: 10
+[2025-10-29 00:05:22] Credit column: kredi
+[2025-10-29 00:05:22] User credits: 2665
+[2025-10-29 00:05:22] target_url column exists: YES
+[2025-10-29 00:05:22] keyword column exists: YES
+[2025-10-29 00:05:22] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 00:05:22] Total links for user 10: 1
+[2025-10-29 00:05:22] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 00:05:22] Query returned 1 rows
+[2025-10-29 00:05:22] First row data: stdClass Object
+(
+    [oid] => 39041
+    [order_credit] => 0.00
+    [auto_renew] => 0
+    [target_url] => https://systemadminbd.com/botnet
+    [user_keyword] => Tahmid
+    [expiry_date] => 2025-12-28
+    [domain] => systemadminbd.com
+    [link] => 
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-28 23:44:27
+    [remaining_days] => 60
+)
+
+[2025-10-29 00:05:22] === MY LINKS PAGE COMPLETED ===
+[2025-10-29 00:05:33] === MY LINKS PAGE STARTED ===
+[2025-10-29 00:05:33] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-28 18:14:27
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 2665
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2696
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 00:05:33] User ID: 10
+[2025-10-29 00:05:33] Credit column: kredi
+[2025-10-29 00:05:33] User credits: 2664
+[2025-10-29 00:05:33] target_url column exists: YES
+[2025-10-29 00:05:33] keyword column exists: YES
+[2025-10-29 00:05:33] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 00:05:33] Total links for user 10: 1
+[2025-10-29 00:05:33] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 00:05:33] Query returned 1 rows
+[2025-10-29 00:05:33] First row data: stdClass Object
+(
+    [oid] => 39041
+    [order_credit] => 0.00
+    [auto_renew] => 0
+    [target_url] => https://systemadminbd.com/botnet
+    [user_keyword] => Tahmid
+    [expiry_date] => 2026-01-27
+    [domain] => systemadminbd.com
+    [link] => 
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-28 23:44:27
+    [remaining_days] => 90
+)
+
+[2025-10-29 00:05:33] === MY LINKS PAGE COMPLETED ===
+[2025-10-29 00:27:15] === MY LINKS PAGE STARTED ===
+[2025-10-29 00:27:15] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-28 18:14:27
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 2664
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2696
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 00:27:15] User ID: 10
+[2025-10-29 00:27:15] Credit column: kredi
+[2025-10-29 00:27:15] User credits: 2664
+[2025-10-29 00:27:15] target_url column exists: YES
+[2025-10-29 00:27:15] keyword column exists: YES
+[2025-10-29 00:27:15] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 00:27:15] Total links for user 10: 1
+[2025-10-29 00:27:15] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 00:27:15] Query returned 1 rows
+[2025-10-29 00:27:15] First row data: stdClass Object
+(
+    [oid] => 39041
+    [order_credit] => 0.00
+    [auto_renew] => 0
+    [target_url] => https://systemadminbd.com/botnet
+    [user_keyword] => Tahmid
+    [expiry_date] => 2026-01-27
+    [domain] => systemadminbd.com
+    [link] => 
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-28 23:44:27
+    [remaining_days] => 90
+)
+
+[2025-10-29 00:27:15] === MY LINKS PAGE COMPLETED ===
+[2025-10-29 01:10:51] === MY LINKS PAGE STARTED ===
+[2025-10-29 01:10:51] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-28 18:14:27
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 2664
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2696
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 01:10:51] User ID: 10
+[2025-10-29 01:10:51] Credit column: kredi
+[2025-10-29 01:10:51] User credits: 2664
+[2025-10-29 01:10:51] target_url column exists: YES
+[2025-10-29 01:10:51] keyword column exists: YES
+[2025-10-29 01:10:51] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 01:10:51] Total links for user 10: 6
+[2025-10-29 01:10:51] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 01:10:51] Query returned 6 rows
+[2025-10-29 01:10:51] First row data: stdClass Object
+(
+    [oid] => 39050
+    [order_credit] => 3.00
+    [auto_renew] => 0
+    [target_url] => https://new.com
+    [user_keyword] => new
+    [expiry_date] => 2025-11-28
+    [domain] => supportcrm.com
+    [link] => https://supportcrm.com/
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-03 23:10:37
+    [remaining_days] => 30
+)
+
+[2025-10-29 01:10:51] === MY LINKS PAGE COMPLETED ===
+[2025-10-29 01:55:14] === MY LINKS PAGE STARTED ===
+[2025-10-29 01:55:15] User session found: stdClass Object
+(
+    [id] => 10
+    [name] => mawo
+    [username] => mawo
+    [email] => mawo@gmai.com
+    [profile_pic] => user_10.png
+    [last_login_ip] => 103.173.175.42
+    [last_login_country] => Bangladesh
+    [last_login_time] => 2025-10-29 01:48:19
+    [paket_id] => 3
+    [kota] => 9999
+    [paket_expire] => 2026-10-25 00:38:29
+    [country] => GOVE
+    [credits] => 0
+    [created_at] => 2025-10-18 17:42:18
+    [last_login] => 
+    [email_verified] => 0
+    [email_confirm_token] => 
+    [api_key] => 24802170d9de87dff2fc6a0821843bf3
+    [otp_enabled] => 0
+    [email_confirm_expires] => 
+    [role] => user
+    [kredi] => 2664
+    [expiry_date] => 2025-11-17 23:42:18
+    [subscription_expires] => 
+    [is_banned] => 0
+    [deleted_at] => 2025-10-22 15:25:43
+    [otp_code] => 816194
+    [otp_expires] => 2025-10-23 17:29:05
+    [last_login_city] => Khulna
+    [last_login_region] => Khulna Division
+)
+
+[2025-10-29 01:55:15] User ID: 10
+[2025-10-29 01:55:15] Credit column: kredi
+[2025-10-29 01:55:15] User credits: 2664
+[2025-10-29 01:55:15] target_url column exists: YES
+[2025-10-29 01:55:15] keyword column exists: YES
+[2025-10-29 01:55:15] Pagination - Page: 1, Limit: 15, Offset: 0
+[2025-10-29 01:55:15] Total links for user 10: 6
+[2025-10-29 01:55:15] Executing FIXED query: 
+  SELECT 
+    o.id AS oid,
+    o.credit AS order_credit,
+    o.auto_renew,
+    o.target_url,
+    o.keyword AS user_keyword,
+    o.expiry_date,
+    l.domain,
+    l.link,
+    l.keyword AS default_keyword,
+    l.durum,
+    l.added_date,
+    -- FIX: Show actual remaining days without forcing to 30
+    CASE 
+      WHEN l.durum = 1 AND o.expiry_date > CURDATE() THEN 
+        DATEDIFF(o.expiry_date, CURDATE())
+      WHEN l.durum = 1 AND (o.expiry_date IS NULL OR o.expiry_date <= CURDATE()) THEN 0
+      ELSE 0 
+    END as remaining_days
+  FROM k_orders o
+  INNER JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='10'
+  ORDER BY o.id DESC LIMIT 0,15
+
+[2025-10-29 01:55:15] Query returned 6 rows
+[2025-10-29 01:55:15] First row data: stdClass Object
+(
+    [oid] => 39050
+    [order_credit] => 3.00
+    [auto_renew] => 0
+    [target_url] => https://new.com
+    [user_keyword] => new
+    [expiry_date] => 2025-11-28
+    [domain] => supportcrm.com
+    [link] => https://supportcrm.com/
+    [default_keyword] => LSDLSD
+    [durum] => 1
+    [added_date] => 2025-10-03 23:10:37
+    [remaining_days] => 30
+)
+
+[2025-10-29 01:55:15] === MY LINKS PAGE COMPLETED ===

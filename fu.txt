@@ -1,0 +1,17 @@
+[2025-10-25 01:19:21] === FATURALAR.PHP STARTED ===
+[2025-10-25 01:19:21] User ID from session | 10
+[2025-10-25 01:19:21] Fixed AUTO_INCREMENT | Set to 1
+[2025-10-25 01:19:21] Creating invoice - User: 10, Amount: 10000, Package: 0
+[2025-10-25 01:19:21] Next available ID | 5
+[2025-10-25 01:19:21] ✅ Invoice created successfully | ID: 5
+[2025-10-25 01:19:21] Loading invoices for user ID: 10
+[2025-10-25 01:19:21] Table structure check | 6 columns found
+[2025-10-25 01:19:21] Total invoices found | 4
+[2025-10-25 01:19:21] Invoices retrieved | 4
+[2025-10-25 01:30:28] === FATURALAR.PHP STARTED ===
+[2025-10-25 01:30:28] User ID from session | 10
+[2025-10-25 01:30:28] Fixed AUTO_INCREMENT | Set to 1
+[2025-10-25 01:30:28] Loading invoices for user ID: 10
+[2025-10-25 01:30:28] Table structure check | 6 columns found
+[2025-10-25 01:30:28] Total invoices found | 4
+[2025-10-25 01:30:28] Invoices retrieved | 4

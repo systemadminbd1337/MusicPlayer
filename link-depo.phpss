@@ -1,0 +1,576 @@
+<?php
+// link-depo.php — USER PANEL (Neon Style) — Full Featured
+// -------------------------------------------------------
+// Features:
+// - DataTables (search + pagination 10/page)
+// - Single Buy (AJAX)
+// - Bulk Add (AJAX + modal-style inline form) [REMOVED]
+// - Credit live update
+// - Placement logging & receiver hook (best-effort)
+// - Robust JSON endpoints (no BOM/whitespace leaks)
+// - Shows only active rows (durum=1) but tolerates NULL for legacy rows
+// - Auto-refresh when redirected from add_link.php?added=1
+//
+// NOTE: This file assumes header.php/footer.php already exist and setup $db + session.
+//       This is user-facing (NOT admin).
+
+include "header.php";
+if (empty($_SESSION['user'])) { redirect("login.php"); exit(); }
+$user = is_object($_SESSION['user']) ? $_SESSION['user'] : (object)$_SESSION['user'];
+$uid  = (int)$user->id;
+
+// ---------------------------
+// Helpers
+// ---------------------------
+function esc($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
+function dbx($v){ global $db; return (isset($db) && method_exists($db,'escape')) ? $db->escape($v) : addslashes($v); }
+function has_col($table, $col){
+  static $cache = [];
+  $key = $table.'|'.$col;
+  if(isset($cache[$key])) return $cache[$key];
+  global $db;
+  try{
+    $exists = (int)$db->get_var(
+      "SELECT COUNT(*) FROM information_schema.columns 
+       WHERE table_schema=DATABASE() AND table_name='".dbx($table)."' AND column_name='".dbx($col)."'"
+    );
+    return $cache[$key] = ($exists>0);
+  }catch(Throwable $e){ return $cache[$key] = false; }
+}
+function json_exit($arr){
+  if (!headers_sent()) {
+    header('Content-Type: application/json; charset=utf-8');
+    header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+  }
+  echo json_encode($arr);
+  exit;
+}
+
+// --------------------------------------
+// SETTINGS / CONSTANTS (edit freely)
+// --------------------------------------
+$COST_PER_LINK = 1; // প্রতি লিংক ১ ক্রেডিট
+
+// ---- Receiver (auto placement) placeholders (optional) ----
+define('RECEIVER_URL', '');
+define('RECEIVER_SECRET', '');
+
+// --------------------------------------
+// Ensure placement log table (best-effort)
+// --------------------------------------
+try{
+  $GLOBALS['__k_lp_ok'] = $db->query("
+    CREATE TABLE IF NOT EXISTS k_link_placements (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      uid INT NOT NULL,
+      lid INT NOT NULL,
+      domain VARCHAR(255),
+      target_url VARCHAR(255),
+      keyword VARCHAR(255),
+      status ENUM('pending','success','failed') DEFAULT 'pending',
+      api_response TEXT,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  ");
+}catch(Throwable $e){ /* ignore */ }
+
+// --------------------------------------
+// USER CREDIT
+// --------------------------------------
+$credit = 0;
+try { $credit = (int)$db->get_var("SELECT kredi FROM k_users WHERE id='{$uid}'"); } catch(Throwable $e){ $credit = 0; }
+
+// --------------------------------------
+// Build SELECT columns (optional columns safe)
+// --------------------------------------
+$cols = "id, domain, link, tip, durum, ups, alexa1, alexa2";
+$has_year     = has_col('k_linkdb','domain_year');
+$has_sure     = has_col('k_linkdb','sure');
+$has_added    = has_col('k_linkdb','created_at');
+$has_added2   = has_col('k_linkdb','added_at');
+$has_country  = has_col('k_linkdb','country');
+
+if ($has_year)   $cols .= ", domain_year";
+if ($has_sure)   $cols .= ", sure";
+if ($has_added)  $cols .= ", created_at";
+if ($has_added2) $cols .= ", added_at";
+if ($has_country)$cols .= ", country";
+
+// --------------------------------------
+// Stats (optional informational cards)
+// --------------------------------------
+$totalLinks  = (int)$db->get_var("SELECT COUNT(*) FROM k_linkdb");
+$totalCredit = (int)$db->get_var("SELECT COALESCE(SUM(ups),0) FROM k_linkdb");
+$phpCount    = (int)$db->get_var("SELECT COUNT(*) FROM k_linkdb WHERE tip=1");
+$jsCount     = (int)$db->get_var("SELECT COUNT(*) FROM k_linkdb WHERE tip=2");
+
+// --------------------------------------
+// Rows (active first; tolerate NULL for legacy)
+// --------------------------------------
+$rows = $db->get_results("SELECT {$cols} FROM k_linkdb WHERE durum='1' OR durum IS NULL ORDER BY id DESC LIMIT 500");
+
+// --------------------------------------
+// Already purchased by this user
+// --------------------------------------
+$purchased_ids = $db->get_col("
+  SELECT l.id
+  FROM k_orders o
+  LEFT JOIN k_linkdb l ON l.id=o.lid
+  WHERE o.uid='{$uid}'
+");
+$purchased_set = [];
+if ($purchased_ids) { foreach($purchased_ids as $lid) $purchased_set[(int)$lid] = true; }
+
+// --------------------------------------
+// Auto Placement to receiver (best-effort)
+// --------------------------------------
+function auto_place_link($lid, $domain, $target_url, $keyword){
+  global $db, $uid;
+  try{
+    $db->query("INSERT INTO k_link_placements (uid,lid,domain,target_url,keyword,status,created_at) 
+      VALUES ('{$uid}','{$lid}','".dbx($domain)."','".dbx($target_url)."','".dbx($keyword)."','pending',NOW())");
+    $plc_id = (int)$db->insert_id;
+  }catch(Throwable $e){ $plc_id = 0; }
+
+  if (!RECEIVER_URL) {
+    if ($plc_id){
+      $db->query("UPDATE k_link_placements SET status='failed', api_response='Receiver URL not configured' WHERE id='{$plc_id}'");
+    }
+    return false;
+  }
+
+  $payload = [
+    'secret'     => RECEIVER_SECRET,
+    'operation'  => 'place_link',
+    'domain'     => $domain,
+    'target_url' => $target_url,
+    'keyword'    => $keyword
+  ];
+
+  $resp = null;
+  $ok   = false;
+  try{
+    $ch = curl_init();
+    curl_setopt_array($ch, [
+      CURLOPT_URL => RECEIVER_URL,
+      CURLOPT_POST => true,
+      CURLOPT_POSTFIELDS => http_build_query($payload),
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_TIMEOUT => 15,
+      CURLOPT_SSL_VERIFYPEER => false,
+      CURLOPT_SSL_VERIFYHOST => false,
+      CURLOPT_HTTPHEADER => ['Expect:']
+    ]);
+    $resp = curl_exec($ch);
+    $err  = curl_error($ch);
+    $http = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($err) {
+      $ok = false;
+      $resp = "cURL error: ".$err;
+    } else {
+      $data = json_decode($resp,true);
+      $ok = (is_array($data) && !empty($data['ok']));
+    }
+  } catch(Throwable $e){
+    $ok = false;
+    $resp = "Exception: ".$e->getMessage();
+  }
+
+  if ($plc_id){
+    $st = $ok ? 'success' : 'failed';
+    $db->query("UPDATE k_link_placements SET status='{$st}', api_response='".dbx((string)$resp)."' WHERE id='{$plc_id}'");
+  }
+
+  return $ok;
+}
+
+// ======================================================================
+// AJAX ENDPOINTS
+// ======================================================================
+if (!empty($_GET['ajax'])) {
+
+  // ---- AJAX: individual buy ----
+  if ($_GET['ajax']==='buy' && $_SERVER['REQUEST_METHOD']==='POST') {
+    try {
+      $lid = (int)($_POST['lid'] ?? 0);
+      if ($lid <= 0) json_exit(['ok'=>0,'msg'=>'Invalid link id']);
+
+      $already = (int)$db->get_var("SELECT COUNT(*) FROM k_orders WHERE uid='{$uid}' AND lid='{$lid}'");
+      if ($already > 0) json_exit(['ok'=>0,'msg'=>'Already purchased']);
+
+      $lr = $db->get_row("SELECT id, domain FROM k_linkdb WHERE id='{$lid}'");
+      if (!$lr) json_exit(['ok'=>0,'msg'=>'Link not found']);
+
+      $bal = (int)$db->get_var("SELECT kredi FROM k_users WHERE id='{$uid}'");
+      if ($bal < $COST_PER_LINK) json_exit(['ok'=>0,'msg'=>'Insufficient credits','balance'=>$bal]);
+
+      $db->query("INSERT INTO k_orders (uid,lid,tarih) VALUES ('{$uid}','{$lid}',NOW())");
+      $db->query("UPDATE k_users SET kredi = kredi - {$COST_PER_LINK} WHERE id='{$uid}'");
+      $newBal = (int)$db->get_var("SELECT kredi FROM k_users WHERE id='{$uid}'");
+
+      auto_place_link($lid, $lr->domain, '', '');
+
+      json_exit(['ok'=>1,'msg'=>'Purchased successfully','lid'=>$lid,'new_balance'=>$newBal]);
+    } catch(Throwable $e){
+      json_exit(['ok'=>0,'msg'=>'Server error: '.$e->getMessage()]);
+    }
+  }
+
+  // ---- AJAX: Bulk add (final submit) [REMOVED] ----
+  /*
+  if ($_GET['ajax']==='bulk' && $_SERVER['REQUEST_METHOD']==='POST') {
+    try {
+      $ids = $_POST['ids'] ?? [];
+      if (!is_array($ids)) $ids = [];
+      $ids = array_values(array_unique(array_map('intval',$ids)));
+
+      $site_address = trim($_POST['site_address'] ?? '');
+      $keyword      = trim($_POST['keyword'] ?? '');
+      $duration     = trim($_POST['duration'] ?? '1m'); // kept for UI/record only
+
+      if (count($ids)===0) json_exit(['ok'=>0,'msg'=>'No selection']);
+      if ($site_address === '') json_exit(['ok'=>0,'msg'=>'Target site address is required']);
+
+      $bal = (int)$db->get_var("SELECT kredi FROM k_users WHERE id='{$uid}'");
+
+      $purchased = [];
+      $skipped   = [];
+      foreach($ids as $lid){
+        if ($bal <= 0) break;
+
+        $exist = (int)$db->get_var("SELECT COUNT(*) FROM k_orders WHERE uid='{$uid}' AND lid='{$lid}'");
+        if ($exist > 0) { $skipped[] = $lid; continue; }
+
+        $linkRow = $db->get_row("SELECT id, domain FROM k_linkdb WHERE id='{$lid}'");
+        if (!$linkRow) { $skipped[] = $lid; continue; }
+
+        if ($bal < $COST_PER_LINK) break;
+
+        $db->query("INSERT INTO k_orders (uid,lid,tarih) VALUES ('{$uid}','{$lid}',NOW())");
+        $db->query("UPDATE k_users SET kredi = kredi - {$COST_PER_LINK} WHERE id='{$uid}'");
+        $bal -= $COST_PER_LINK;
+
+        auto_place_link($lid, $linkRow->domain, $site_address, $keyword);
+
+        $purchased[] = $lid;
+      }
+
+      $newBal = (int)$db->get_var("SELECT kredi FROM k_users WHERE id='{$uid}'");
+      json_exit([
+        'ok'=>1,
+        'msg'=>'Processed',
+        'purchased'=>$purchased,
+        'skipped'=>$skipped,
+        'new_balance'=>$newBal
+      ]);
+    } catch(Throwable $e){
+      json_exit(['ok'=>0,'msg'=>'Server error: '.$e->getMessage()]);
+    }
+  }
+  */
+
+  // ---- Unknown ajax
+  json_exit(['ok'=>0,'msg'=>'Unknown endpoint']);
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link Depot — User</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+  <style>
+    body { background:#0e0c1d; color:#ddd; }
+    .card { background:#161329; border:none; border-radius:15px; }
+    .card h5 { color:#9f7aea; font-weight:600; }
+    .stats-box { font-size:22px; font-weight:700; }
+    .badge-php { background:#6b46c1; }
+    .badge-js  { background:#dd6b20; }
+    table.dataTable { color:#fff; }
+    .dataTables_filter input { background:#222; border:none; color:#fff; padding:5px; }
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+      background:#222; color:#fff!important; border:none; border-radius:6px;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+      background:#9f7aea!important; color:#fff!important;
+    }
+    .buy-btn[disabled]{ opacity:.6; cursor:not-allowed; }
+    .lock-badge{
+      display:inline-block; padding:.25rem .5rem; border-radius:6px;
+      background:linear-gradient(90deg,#22c55e,#06b6d4); color:#001a17; font-weight:800; font-size:.8rem;
+    }
+    .toolbar{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+    .form-chip{display:inline-flex;align-items:center;gap:6px;padding:.25rem .5rem;background:#0f172a;border:1px solid rgba(255,255,255,.08);border-radius:999px;font-size:.85rem;}
+    .form-chip .x{cursor:pointer;font-weight:900;}
+    .hint{color:#a5b4fc;font-size:.875rem;}
+    .modal-content{border:1px solid rgba(255,255,255,.06);}
+  </style>
+</head>
+<body>
+<div class="container-fluid mt-4">
+
+  <h3 class="mb-3 text-white fw-bold">🔗 Link Depot</h3>
+
+  <!-- Top toolbar: bulk buttons + credit -->
+  <div class="toolbar mb-3">
+    <!-- <button id="btnBulkAdd" class="btn btn-success btn-sm" disabled>🧺 Bulk Add</button> -->
+    <span class="ms-auto">
+      💰 Credits:
+      <span id="liveCreditBadge" class="badge bg-info"><?= (int)$credit ?></span>
+      <small class="text-muted ms-2">(updates live)</small>
+    </span>
+  </div>
+
+  <!-- Optional Stats -->
+  <div class="row g-3 mb-4">
+    <div class="col-md-3">
+      <div class="card p-3 text-center">
+        <h5>Total Links</h5>
+        <div class="stats-box text-info"><?= $totalLinks ?></div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-3 text-center">
+        <h5>Total Credit</h5>
+        <div class="stats-box text-success"><?= $totalCredit ?></div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-3 text-center">
+        <h5>PHP Links</h5>
+        <div class="stats-box"><span class="badge badge-php"><?= $phpCount ?></span></div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-3 text-center">
+        <h5>JS Links</h5>
+        <div class="stats-box"><span class="badge badge-js"><?= $jsCount ?></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="card p-3">
+    <div class="table-responsive">
+      <table id="marketTable" class="table table-dark table-striped align-middle" style="width:100%">
+        <thead>
+          <tr>
+            <th style="width:36px;"><!-- <input type="checkbox" id="chkAll"> --></th>
+            <th>Domain</th>
+            <th>PA</th>
+            <th>DA</th>
+            <th>Credit</th>
+            <th>Type</th>
+            <th>Domain Year</th>
+            <th>Panel Duration</th>
+            <th>Country</th>
+            <th>Added</th>
+            <th style="width:160px;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach($rows as $r):
+            $lid  = (int)$r->id;
+            $isOwned = isset($purchased_set[$lid]);
+            $typeBadge = ($r->tip==1)
+              ? '<span class="badge badge-php">PHP</span>'
+              : (($r->tip==2) ? '<span class="badge badge-js">JS</span>' : '<span class="badge bg-secondary">Other</span>');
+            $domYear   = $has_year  ? esc($r->domain_year) : '–';
+            $duration  = $has_sure  ? esc($r->sure)        : '–';
+            $addedDate = '–';
+            if ($has_added && !empty($r->created_at)) $addedDate = esc($r->created_at);
+            elseif ($has_added2 && !empty($r->added_at)) $addedDate = esc($r->added_at);
+            $country   = $has_country ? esc($r->country) : '–';
+            $DA = (int)($r->alexa2 ?? 0);
+            $PA = (int)($r->alexa1 ?? 0);
+          ?>
+          <tr data-lid="<?=$lid?>" data-domain="<?=esc($r->domain)?>">
+            <td><!-- <input type="checkbox" class="rowChk" value="<?=$lid?>" <?=$isOwned?'disabled':''?>> --></td>
+            <td><span class="fw-bold"><?= esc($r->domain) ?></span></td>
+            <td><?= $PA ?></td>
+            <td><?= $DA ?></td>
+            <td><?= $COST_PER_LINK ?></td>
+            <td><?=$typeBadge?></td>
+            <td><?=$domYear?></td>
+            <td><?=$duration?></td>
+            <td><?=$country?></td>
+            <td><?=$addedDate?></td>
+            <td>
+              <?php if($isOwned): ?>
+                <span class="lock-badge">Purchased 🔒</span>
+              <?php else: ?>
+                <button class="btn btn-sm btn-primary buy-btn" data-lid="<?=$lid?>" data-domain="<?=esc($r->domain)?>">
+                  🪙 Buy (<?=$COST_PER_LINK?>)
+                </button>
+              <?php endif; ?>
+            </td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bulk Add Inline (User friendly) [REMOVED] -->
+  <!--
+  <div class="card p-3 mt-4">
+    <h5 class="text-info">🧺 Bulk Add Links</h5>
+    <div class="row g-3">
+      <div class="col-lg-5">
+        <label class="form-label">Target URL</label>
+        <input type="text" id="bulkSiteAddress" class="form-control bg-dark text-light" placeholder="https://your-site.com/article">
+        <div class="hint mt-1">যেখানে অ্যাঙ্কর/ব্যাকলিঙ্ক বসবে</div>
+      </div>
+      <div class="col-lg-4">
+        <label class="form-label">Keyword (Anchor)</label>
+        <input type="text" id="bulkKeyword" class="form-control bg-dark text-light" placeholder="your main keyword">
+      </div>
+      <div class="col-lg-2">
+        <label class="form-label">Duration</label>
+        <select id="bulkDuration" class="form-select bg-dark text-light">
+          <option value="1m">1 Month</option>
+          <option value="3m">3 Months</option>
+          <option value="6m">6 Months</option>
+          <option value="12m">12 Months</option>
+        </select>
+      </div>
+      <div class="col-lg-1 d-grid">
+        <label class="form-label">&nbsp;</label>
+        <button id="confirmBulkBtn" class="btn btn-success">Add</button>
+      </div>
+    </div>
+    <div id="bulkAlert" class="mt-3"></div>
+  </div>
+  -->
+  <div class="card p-3 mt-4"></div>
+
+</div>
+
+<?php include "footer.php"; ?>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+<script>
+(function(){
+  // DataTable: 10 per page + search box
+  const table = $('#marketTable').DataTable({
+    pageLength: 10,
+    order: [[10,"desc"]]
+  });
+
+  // checkbox logic [REMOVED]
+  /*
+  const $chkAll = $('#chkAll');
+  const $btnBulk = $('#btnBulkAdd');
+
+  function refreshBulkState(){
+    const any = $('.rowChk:enabled:checked').length > 0;
+    $btnBulk.prop('disabled', !any);
+  }
+
+  $chkAll.on('change', function(){
+    const checked = $(this).is(':checked');
+    $('.rowChk:enabled').prop('checked', checked);
+    refreshBulkState();
+  });
+
+  $(document).on('change','.rowChk', refreshBulkState);
+  */
+
+  // ---------------- INDIVIDUAL BUY ----------------
+  $(document).on('click','.buy-btn', function(){
+    const btn = $(this);
+    const lid = btn.data('lid');
+    btn.prop('disabled',true).text('Processing...');
+    $.ajax({
+      url: 'link-depo.php?ajax=buy',
+      method: 'POST',
+      dataType: 'json',
+      data: {lid: lid},
+      success: function(res){
+        if(res && res.ok){
+          const row = $('tr[data-lid="'+lid+'"]');
+          row.find('.buy-btn').replaceWith('<span class="lock-badge">Purchased 🔒</span>');
+          row.find('.rowChk').prop('checked', false).prop('disabled', true);
+          if (typeof res.new_balance !== 'undefined'){
+            $('#liveCreditBadge').text(res.new_balance);
+            const navCredit = $('#navCredit'); if(navCredit.length) navCredit.text(res.new_balance);
+          }
+        } else {
+          alert(res && res.msg ? res.msg : 'Failed');
+          btn.prop('disabled',false).text('Buy');
+        }
+        // refreshBulkState();
+      },
+      error: function(){
+        alert('Network error');
+        btn.prop('disabled',false).text('Buy');
+      }
+    });
+  });
+
+  // ---------------- BULK ADD [REMOVED] ----------------
+  /*
+  const $bulkAlert = $('#bulkAlert');
+  const $bulkSite  = $('#bulkSiteAddress');
+  const $bulkKw    = $('#bulkKeyword');
+  const $bulkDur   = $('#bulkDuration');
+
+  function getSelectedIds(){
+    return $('.rowChk:enabled:checked').map((_,el)=>$(el).val()).get();
+  }
+
+  $('#btnBulkAdd, #confirmBulkBtn').on('click', function(){
+    const ids = getSelectedIds();
+    if(ids.length===0){ $bulkAlert.html('<div class="alert alert-warning">Select at least one site.</div>'); return; }
+    if(!$bulkSite.val()){ $bulkAlert.html('<div class="alert alert-warning">Please enter Target URL.</div>'); return; }
+    $bulkAlert.html('<div class="alert alert-info">Processing...</div>');
+
+    $.ajax({
+      url: 'link-depo.php?ajax=bulk',
+      method: 'POST',
+      dataType: 'json',
+      data: {
+        ids: ids,
+        site_address: $bulkSite.val(),
+        keyword: $bulkKw.val(),
+        duration: $bulkDur.val()
+      },
+      success: function(res){
+        if(!res || !res.ok){
+          $bulkAlert.html('<div class="alert alert-danger">'+(res && res.msg?res.msg:'Failed')+'</div>');
+          return;
+        }
+        (res.purchased||[]).forEach(function(lid){
+          const row = $('tr[data-lid="'+lid+'"]');
+          row.find('.buy-btn').replaceWith('<span class="lock-badge">Purchased 🔒</span>');
+          row.find('.rowChk').prop('checked', false).prop('disabled', true);
+        });
+        if(typeof res.new_balance !== 'undefined'){
+          $('#liveCreditBadge').text(res.new_balance);
+          const navCredit = $('#navCredit'); if(navCredit.length) navCredit.text(res.new_balance);
+        }
+        const purchasedN = (res.purchased||[]).length;
+        const skippedN   = (res.skipped||[]).length;
+        $bulkAlert.html('<div class="alert alert-success">✅ Bulk added '+purchasedN+' links, skipped '+skippedN+'.</div>');
+        $('#chkAll').prop('checked', false);
+        refreshBulkState();
+      },
+      error: function(){
+        $bulkAlert.html('<div class="alert alert-danger">Network error</div>');
+      }
+    });
+  });
+  */
+
+  // ✅ Auto-refresh when redirected from add_link.php
+  if (window.location.search.includes('added=1')) {
+    setTimeout(()=>{ location.reload(); }, 800);
+  }
+})();
+</script>
+</body>
+</html>

